@@ -1,0 +1,35 @@
+/* RealTimeProjectComponent.css */
+.real-time-project {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .real-time-project h2 {
+    font-size: 24px;
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .real-time-project h3 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  .real-time-project p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .real-time-project ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .real-time-project li {
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  

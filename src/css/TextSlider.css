@@ -1,0 +1,12 @@
+/* styles.css */
+
+/* Style for the slide content */
+.slide-content {
+    padding: 20px;
+    height: 300px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+
+  }
+  

@@ -1,0 +1,48 @@
+/* TrainingBanner.css */
+
+.AzureTraining {
+    background: linear-gradient(100deg, #629362, #552203);
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .banner-content {
+    padding: 5px;
+    border-radius: 10px;
+  }
+  
+  .AzureTraining .course-title {
+    font-size: 36px;
+    margin-top: 0;
+  }
+  
+  .AzureTraining .trainer {
+    font-size: 24px;
+  }
+  
+  .AzureTraining .demo-info {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .AzureTraining .course-fee {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  .AzureTraining a {
+    color: #552203;
+    background-color: #629362;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    opacity: 0.9;
+    margin-left: 60%;
+  }
+  
+  .AzureTraining .contact-info {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  

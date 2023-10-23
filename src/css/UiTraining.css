@@ -1,0 +1,53 @@
+/* TrainingBanner.css */
+
+.UiTraining {
+    background: linear-gradient(100deg, #8d9053, #280e53);
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .UiTraining .banner-content {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .UiTraining .course-title {
+    font-size: 36px;
+    margin-top: 0;
+  }
+  
+  .UiTraining .trainer {
+    font-size: 24px;
+  }
+  
+  .UiTraining .demo-info {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .UiTraining .course-fee {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  /* TrainingBanner.css */
+
+/* ... Your existing styles ... */
+
+.UiTraining a {
+     color: #280e53;
+    text-decoration: underline;
+    font-size: 18px;
+    background-color: #8d9053;
+    opacity: 0.9;
+    padding: 20px;
+    margin-left: 60%;
+  }
+  
+  
+  .UiTraining .contact-info {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  

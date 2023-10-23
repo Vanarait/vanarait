@@ -1,0 +1,292 @@
+/* Header.css */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  .top-row {
+    background-color: #222;
+    padding: 5px 0;
+  }
+  .top-row-content .row{
+    margin-top: 15px;
+  }
+  .sign-out-btn{
+    display: none;
+  }
+  .top-row .btn{
+    margin-left: 15px;
+  }
+  .top-row a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+  }
+  
+  .top-row a:hover {
+    color: #ffd700;
+  }
+  .course-enquiry{
+    margin-top: 10px;
+  }
+  .course-enquiry span {
+    margin-right: 10px;
+  }
+  
+  .social-icons a {
+    font-size: 20px;
+  }
+  
+  .social-icons a:hover {
+    color: #ffd700;
+  }
+  
+  .second-row {
+    padding: 10px 0;
+  }
+  
+  .logo img {
+    max-width: 100%;
+  }
+  /* Navigation Menu */
+
+/* Center the menu items */
+nav.navigation {
+  margin-top: 12px;
+}
+
+.navigation ul{
+  padding-left: 0px !important;
+}
+
+/* Style for top-level menu items */
+.navigation > ul > li {
+  display: inline-block;
+  position: relative; /* For dropdowns */
+}
+
+.navigation > ul > li a {
+  color: #fff; /* Text color for top-level menu items */
+  text-decoration: none;
+  display: block;
+}
+
+/* Style for dropdowns */
+.submenu {
+  z-index: 999999;
+  width: 230px;
+  display: none; /* Hide sub-menu by default */
+  position: absolute;
+  background-color: #333; /* Background color for dropdowns */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.navigation > ul > li:hover .submenu {
+  display: block; /* Show sub-menu on hover */
+}
+.submenu li{
+  padding: 10px 5px;
+}
+
+.submenu li a {
+  color: #fff; /* Text color for sub-menu items */
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  padding-left: 15px !important;
+}
+
+/* Style for the angle-down icon */
+.fa-angle-down {
+  margin-left: 5px;
+}
+
+/* Style for active links */
+.navigation > ul > li a.active {
+  color: #ffcc00; /* Active link text color */
+}
+
+/* Style for chatbot icon */
+.chatbot-icon {
+  background-color: #25d366; /* WhatsApp green */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Style for chatbot popup */
+.chatbot-popup {
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  width: 300px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.chatbot-popup.open {
+  display: block;
+}
+
+/* Style for the close button */
+.close-button {
+  background-color: #ff4d4d; /* Red color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Style for the WhatsApp chat link in the popup */
+.whatsapp-link {
+  display: block;
+  background-color: #25d366; /* WhatsApp green */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+    
+.rounded-social-buttons .social-button {
+  display: inline-block;
+position: relative;
+cursor: pointer;
+width: 40px;
+height: 40px;
+border: 0.125rem solid transparent;
+padding: 0;
+text-decoration: none;
+text-align: center;
+color: #fefefe;
+font-size: 20px;
+font-weight: normal;
+line-height: 1.9em;
+border-radius: 1.6875rem;
+transition: all 0.5s ease;
+margin-right: 0.25rem;
+margin-bottom: 0.25rem;
+}
+    
+    @media only screen and (max-width:1024px){
+      .rounded-social-buttons .social-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 37px;
+  height: 37px;
+  border: 0.125rem solid transparent;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #fefefe;
+  /*font-size: 1.5625rem;*/
+  font-weight: normal;
+  line-height: 1.7em;
+  border-radius: 1.6875rem;
+  transition: all 0.5s ease;
+  margin-right: 0.05rem;
+  margin-bottom: 0.25rem;
+  margin-top:7px;
+}
+      
+    }
+
+.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-youtube, .fa-instagram {
+ /* font-size: 20px;*/
+  line-height: 1.7;
+}
+
+.rounded-social-buttons .social-button.facebook {
+  background: #3b5998;
+}
+
+.rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
+  color: #3b5998;
+  background: #fefefe;
+  border-color: #3b5998;
+}
+
+.rounded-social-buttons .social-button.twitter {
+  background: #55acee;
+}
+
+.rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
+  color: #55acee;
+  background: #fefefe;
+  border-color: #55acee;
+}
+
+.rounded-social-buttons .social-button.linkedin {
+  background: #007bb5;
+}
+
+.rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
+  color: #007bb5;
+  background: #fefefe;
+  border-color: #007bb5;
+}
+
+.rounded-social-buttons .social-button.youtube {
+  background: #bb0000;
+}
+
+.rounded-social-buttons .social-button.youtube:hover, .rounded-social-buttons .social-button.youtube:focus {
+  color: #bb0000;
+  background: #fefefe;
+  border-color: #bb0000;
+}
+
+.rounded-social-buttons .social-button.instagram {
+  background: #D6274D;
+}
+.rounded-social-buttons .social-button.telegram {
+  background: #0088CC;
+}
+.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
+  color: #D6274D;
+  background: #fefefe;
+  border-color: #D6274D;
+}
+
+
+.rounded-social-buttons .social-button.telegram:hover, .rounded-social-buttons .social-button.telegram:focus {
+    color: #0088CC;
+    background: #fefefe;
+    border-color: #0088CC;
+  }
+
+   .whatsup{
+     background: green;
+  }
+
+  .rounded-social-buttons .social-button.whatsup:hover, .rounded-social-buttons .social-button.whatsup:focus {
+    color: green;
+    background: #fefefe;
+    border-color: green;
+  }
+    
+    
+    
+    /*-- New style---*/
+    .header-bottom-icon {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+  

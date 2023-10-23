@@ -1,0 +1,59 @@
+/* StudentFeedback.css */
+
+.student-feedback {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.feedback-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.feedback-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feedback-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  width: calc(25% - 20px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-icon {
+  color: #007bff; /* Change the icon color */
+  margin-right: 10px;
+}
+
+.info-text {
+  flex: 1;
+}
+
+.student-name {
+  font-weight: bold;
+}
+
+.student-course {
+  font-style: italic;
+}
+
+.student-feedback {
+  margin-top: 10px;
+}
+
+.rating-label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}

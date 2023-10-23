@@ -1,0 +1,42 @@
+/* CareerGrowthFeatures.css */
+
+.career-growth-features {
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .career-growth-features h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .feature {
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .career-growth-features .feature img {
+    max-width: 100%;
+    min-width: 200px; /* Set a minimum width of 200 pixels for images */
+    border-radius: 50%;
+  }
+  
+  .feature p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  .feature strong {
+    color: #0073e6;
+  }
+  

@@ -1,0 +1,50 @@
+/* TrainerRegistrationForm.css */
+.trainer-registration-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .trainer-registration-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .trainer-registration-container label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .trainer-registration-container input[type="text"],
+  .trainer-registration-container input[type="email"],
+  .trainer-registration-container input[type="tel"],
+  .trainer-registration-container input[type="number"],
+  .trainer-registration-container input[type="password"],
+  .trainer-registration-container input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .trainer-registration-container input[type="file"] {
+    padding: 5px;
+  }
+  
+  .trainer-registration-container input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .trainer-registration-container input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  

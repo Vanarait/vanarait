@@ -1,0 +1,29 @@
+/* PersonalTrainingComponent.css */
+.training-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .training-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .training-container p {
+    font-size: 16px;
+  }
+  
+  .training-container ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  
+  .training-container li {
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  

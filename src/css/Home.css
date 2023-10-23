@@ -1,0 +1,83 @@
+.shape-container {
+    background-color: #3498db; /* Background color for the shape */
+  /*  width: 200px;*/
+    height: 100px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    border-radius:25px 0 25px 0px;
+}
+.shape-text{
+	padding:25px 0 0  20px;
+}
+.shape-text1{
+    text-align:center;
+}
+.section-title{
+    margin: 30px 0px 20px 30px;
+}
+.trainDetails{
+    padding: 15px 15px 50px 15px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+  
+.row.sliders {
+  color: red;
+  height: 350px;
+}
+.row.course-fee{
+  background-color: rgb(168, 174, 181);
+  padding: 50px 15px;
+}
+ h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+  animation: fadeInUp 1s ease;
+  text-transform: uppercase; /* Convert the text to uppercase */
+  font-weight: bold; /* Make the text bold */
+  letter-spacing: 2px; /* Add letter spacing */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.click{
+  color: red;
+  text-decoration: none;
+  font-weight: bolder;
+}

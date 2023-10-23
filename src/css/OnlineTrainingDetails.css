@@ -1,0 +1,41 @@
+/* TrainingDetails.css */
+
+.OnlineTrainingDetails h2{
+  margin-top: 50px;
+}
+#trainingTable{
+  margin: 50px 0;
+}
+/* Style the table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .table th, .table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .table th {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+  }
+  
+  .table td {
+    text-align: center;
+  }
+  
+  /* Style the "Join Zoom" link */
+  .table a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  /* Style the Action buttons */
+  .btn {
+    margin: 5px;
+  }
+  

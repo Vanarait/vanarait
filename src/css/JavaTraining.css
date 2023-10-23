@@ -1,0 +1,55 @@
+/* TrainingBanner.css */
+
+.JavaTraining {
+    background: linear-gradient(145deg, #bf79a6, #154048); /* Define your gradient colors */
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  /* The rest of your existing styles can remain the same */
+  
+  
+  /* Rest of your CSS styles */
+  
+  
+  .JavaTraining .banner-content {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .JavaTraining  .course-title {
+    font-size: 36px;
+    margin-top: 0;
+  }
+  
+  .JavaTraining .trainer {
+    font-size: 24px;
+  }
+  
+  .JavaTraining .demo-info {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .JavaTraining .course-fee {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  .JavaTraining a {
+    color: #154048;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 60%;
+    background-color: #bf79a6;
+    padding: 20px;
+    opacity: 0.9;
+  }
+  
+  .JavaTraining .contact-info {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
