@@ -29,11 +29,11 @@ const Header = () => {
                
                 <div className="social-icons">
                     <div class="rounded-social-buttons">
-                      <a class="social-button whatsup" href="https://chat.whatsapp.com/CYmkHLDzRTyJkY5Dw0LRPd&amp;text=Hello, I Want to discus with you regarding " target="_blank" rel="noreferrer"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
-                      <a class="social-button twitter " href="https://twitter.com/VanaraIT" target="_blank"><i class="fa fa-twitter" rel="noreferrer"></i></a>
-                      <a class="social-button youtube" href="https://www.youtube.com/@vanarait?sub_confirmation=1" target="_blank" rel="noreferrer"><i class="fa fa-youtube"></i></a>
-                      <a class="social-button facebook" href="https://www.facebook.com/vanarait" target="_blank"><i class="fa fa-facebook" rel="noreferrer"></i></a>
-                      <a class="social-button instagram" href="https://www.instagram.com/vanarait/" target="_blank"><i class="fa fa-instagram" rel="noreferrer"></i></a>
+                      <a class="social-button whatsup" href="https://chat.whatsapp.com/CYmkHLDzRTyJkY5Dw0LRPd&amp;text=Hello, I Want to discus with you regarding " target="_blank" rel="noreferrer"><i class="fa fa-whatsapp" aria-hidden="true"></i>A</a>
+                      <a class="social-button twitter " href="https://twitter.com/VanaraIT" target="_blank"><i class="fa fa-twitter" rel="noreferrer"></i>C</a>
+                      <a class="social-button youtube" href="https://www.youtube.com/@vanarait?sub_confirmation=1" target="_blank" rel="noreferrer"><i class="fa fa-youtube"></i>B</a>
+                      <a class="social-button facebook" href="https://www.facebook.com/vanarait" target="_blank"><i class="fa fa-facebook" rel="noreferrer"></i>D</a>
+                      <a class="social-button instagram" href="https://www.instagram.com/vanarait/" target="_blank"><i class="fa fa-instagram" rel="noreferrer"></i>E</a>
                     </div>
                   </div>
                 </div>
@@ -45,7 +45,7 @@ const Header = () => {
                       <li> <Link to="/">Home</Link></li>
 
                       <li>
-                        <a href="#"> Services <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <a href="www.vanarait.com"> Services <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                         <ul class="submenu">
                           <li><Link to="/OnlineTrainingDetails">Online Training</Link></li>
 
