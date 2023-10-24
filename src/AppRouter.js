@@ -4,6 +4,8 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Courses from './pages/Courses';
+import  Header  from './components/Header';
+import Footer from './components/Footer';
 import OnlineTrainingDetails from './components/OnlinTrainingDetails';
 import PersonalTrainingComponent from './components/PersonalTrainingComponent';
 import RealTimeProjectComponent from './pages/RealTimeProjectComponent';
@@ -18,6 +20,7 @@ import CourseOfferings from './pages/CourseOfferings';
 const AppRouter = () => {
   return (
     <Router>
+          <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/CourseOfferings" element={<CourseOfferings />} />
@@ -34,6 +37,7 @@ const AppRouter = () => {
        <Route path="/courses" element={<Courses />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };

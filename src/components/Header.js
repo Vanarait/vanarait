@@ -22,18 +22,18 @@ const Header = () => {
                     <span>Course Enquiry:</span>
                     <a href="tel:+919494494085">+91 9494494085</a>
                     <span>Email: </span>
-                    <a href="mailto:example@example.com">hr@vanarait.com</a>
+                    <a href="mailto:hr@vanarait.com">hr@vanarait.com</a>
                   </div>
                 </div>
                 <div className="col-md-4">
                
                 <div className="social-icons">
                     <div class="rounded-social-buttons">
-                      <a class="social-button whatsup" href="https://chat.whatsapp.com/CYmkHLDzRTyJkY5Dw0LRPd&amp;text=Hello, I Want to discus with you regarding " target="_blank" rel="noreferrer"><i class="fa fa-whatsapp" aria-hidden="true"></i>A</a>
-                      <a class="social-button twitter " href="https://twitter.com/VanaraIT" target="_blank" rel="noreferrer"><i class="fa fa-twitter"></i>C</a>
-                      <a class="social-button youtube" href="https://www.youtube.com/@vanarait?sub_confirmation=1" target="_blank" rel="noreferrer"><i class="fa fa-youtube"></i>B</a>
-                      <a class="social-button facebook" href="https://www.facebook.com/vanarait" target="_blank" rel="noreferrer"><i class="fa fa-facebook"></i>D</a>
-                      <a class="social-button instagram" href="https://www.instagram.com/vanarait/" target="_blank" rel="noreferrer"><i class="fa fa-instagram"></i>E</a>
+                      <a class="social-button whatsup" href="https://chat.whatsapp.com/CYmkHLDzRTyJkY5Dw0LRPd&amp;text=Hello, I Want to discus with you regarding " target="_blank" rel="noreferrer"><i class="fa fa-whatsapp" aria-hidden="true"></i>.</a>
+                      <a class="social-button twitter " href="https://twitter.com/VanaraIT" target="_blank" rel="noreferrer"><i class="fa fa-twitter"></i>.</a>
+                      <a class="social-button youtube" href="https://www.youtube.com/@vanarait?sub_confirmation=1" target="_blank" rel="noreferrer"><i class="fa fa-youtube"></i>.</a>
+                      <a class="social-button facebook" href="https://www.facebook.com/vanarait" target="_blank" rel="noreferrer"><i class="fa fa-facebook"></i>.</a>
+                      <a class="social-button instagram" href="https://www.instagram.com/vanarait/" target="_blank" rel="noreferrer"><i class="fa fa-instagram"></i>.</a>
                     </div>
                   </div>
                 </div>
