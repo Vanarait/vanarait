@@ -1,25 +1,27 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import './App.css'; // Import your global CSS file for additional styles
-import AppRouter from './AppRouter';
+import React, { createContext, useContext } from 'react';
 
-const App = () => {
+// Create a context with a default value for basename
+const MyContext = createContext({ basename: '/' });
+
+function MyComponent() {
+  // Use useContext to access the context
+  const { basename } = useContext(MyContext);
+
+  // Your component logic here, using the basename
   return (
-    <Router>
-      <div className="app">
-        <Header />
-        <div className="content">
-          <Routes>
-            <Route path="/" element={<AppRouter />} />
-            {/* Define more routes as needed */}
-          </Routes>
-        </div>
-        <Footer />
-      </div>
-    </Router>
+    <div>
+      Base Name: {basename}
+    </div>
   );
-};
+}
+
+function App() {
+  // Provide the context with the desired basename value
+  return (
+    <MyContext.Provider value={{ basename: '/myapp' }}>
+      <MyComponent />
+    </MyContext.Provider>
+  );
+}
 
 export default App;
