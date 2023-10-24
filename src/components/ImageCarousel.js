@@ -18,7 +18,7 @@ function ImageCarousel({ images, autoScrollInterval = 3000 }) {
     return () => {
       clearInterval(interval);
     };
-  }, [currentIndex, autoScrollInterval]);
+  }, [nextSlide, autoScrollInterval]);
 
   const visibleImages = [
     images[currentIndex],

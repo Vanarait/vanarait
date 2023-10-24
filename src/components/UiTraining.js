@@ -19,11 +19,6 @@ function getDayWithSuffix(day) {
 }
 
 function UiTraining() {
-  const date = new Date(2023, 10, 10); // Replace with your desired date
-  const formattedDate = `${getDayWithSuffix(date.getDate())} ${date.toLocaleString('default', {
-    month: 'long',
-  })} ${date.getFullYear()}`;
-
   return (
     <div className="UiTraining">
       <h1>UI Fullstack With React JS</h1>
