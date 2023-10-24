@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import '../css/ImageCarousel.css';
 
 function ImageCarousel({ images, autoScrollInterval = 3000 }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     setCurrentIndex((currentIndex + 1) % images.length);
-  };
+  }, [currentIndex, images]);
 
   const prevSlide = () => {
     setCurrentIndex((currentIndex - 1 + images.length) % images.length);
@@ -18,7 +18,7 @@ function ImageCarousel({ images, autoScrollInterval = 3000 }) {
     return () => {
       clearInterval(interval);
     };
-  }, [nextSlide, autoScrollInterval]);
+  }, [currentIndex, autoScrollInterval, nextSlide]);
 
   const visibleImages = [
     images[currentIndex],
@@ -27,7 +27,6 @@ function ImageCarousel({ images, autoScrollInterval = 3000 }) {
     images[(currentIndex + 3) % images.length],
   ];
 
-  // This effect handles the initial loading of the images.
   useEffect(() => {
     const preloadImages = (imageUrls) => {
       for (const imageUrl of imageUrls) {

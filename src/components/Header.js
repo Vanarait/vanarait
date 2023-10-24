@@ -29,11 +29,11 @@ const Header = () => {
                
                 <div className="social-icons">
                     <div class="rounded-social-buttons">
-                      <a class="social-button whatsup" href="https://chat.whatsapp.com/CYmkHLDzRTyJkY5Dw0LRPd&amp;text=Hello, I Want to discus with you regarding " target="_blank" rel="noreferrer noopener"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
-                      <a class="social-button twitter " href="https://twitter.com/VanaraIT" target="_blank"><i class="fa fa-twitter" rel="noreferrer noopener"></i></a>
-                      <a class="social-button youtube" href="https://www.youtube.com/@vanarait?sub_confirmation=1" target="_blank" rel="noreferrer noopener"><i class="fa fa-youtube"></i></a>
-                      <a class="social-button facebook" href="https://www.facebook.com/vanarait" target="_blank"><i class="fa fa-facebook" rel="noreferrer noopener"></i></a>
-                      <a class="social-button instagram" href="https://www.instagram.com/vanarait/" target="_blank"><i class="fa fa-instagram" rel="noreferrer noopener"></i></a>
+                      <a class="social-button whatsup" href="https://chat.whatsapp.com/CYmkHLDzRTyJkY5Dw0LRPd&amp;text=Hello, I Want to discus with you regarding " target="_blank" rel="noreferrer"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                      <a class="social-button twitter " href="https://twitter.com/VanaraIT" target="_blank"><i class="fa fa-twitter" rel="noreferrer"></i></a>
+                      <a class="social-button youtube" href="https://www.youtube.com/@vanarait?sub_confirmation=1" target="_blank" rel="noreferrer"><i class="fa fa-youtube"></i></a>
+                      <a class="social-button facebook" href="https://www.facebook.com/vanarait" target="_blank"><i class="fa fa-facebook" rel="noreferrer"></i></a>
+                      <a class="social-button instagram" href="https://www.instagram.com/vanarait/" target="_blank"><i class="fa fa-instagram" rel="noreferrer"></i></a>
                     </div>
                   </div>
                 </div>
