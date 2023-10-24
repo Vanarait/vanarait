@@ -11,9 +11,12 @@ const App = () => {
       <div className="app">
         <Header />
         <div className="content">
-        <AppRouter />
+          <Routes>
+            <Route path="/" element={<AppRouter />} />
+            {/* Define more routes as needed */}
+          </Routes>
         </div>
-        <Footer /> {/* Include the Footer component */}
+        <Footer />
       </div>
     </Router>
   );
