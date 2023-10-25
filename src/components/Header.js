@@ -88,7 +88,7 @@ const Header = () => {
                     <ul>
                       <li> <Link to="/">Home</Link></li>
                       <li>
-                        <a href="www.vanarait.com"> Services <i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                      <Link> Services <i className="fa fa-angle-down" aria-hidden="true"></i></Link>
                         <ul className="submenu">
                           <li><Link to="/OnlineTrainingDetails">Online Training</Link></li>
                           <li><Link to="/PersonalTrainingComponent">Personal Training</Link></li>
