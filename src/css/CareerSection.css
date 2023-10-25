@@ -23,7 +23,6 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-bottom: 20px;
-    width: calc(25% - 20px);
   }
   
   .service h3 {
@@ -70,3 +69,14 @@
     text-decoration: underline;
   }
   
+@media only screen and (max-width:1024px) {
+  
+.career-section {
+  background-color: #f9f9f9;
+  padding: 0px;
+}
+.service{
+  padding: 0 15px 0 0px;
+  background-color: transparent;
+}
+}

@@ -38,7 +38,7 @@ function StudentFeedback() {
       <h2 className="feedback-title">Recent Student Feedback and Ratings</h2>
       <div className="feedback-list">
         {feedbackData.map((feedback, index) => (
-          <div key={index} className="feedback-item">
+          <div key={index} className="feedback-item col-md-3">
             <div className="user-info">
               <FontAwesomeIcon icon={faUser} className="user-icon" size="2x" />
               <div className="info-text">

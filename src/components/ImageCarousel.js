@@ -42,7 +42,7 @@ function ImageCarousel({ images, autoScrollInterval = 3000 }) {
     <div className="image-carousel">
       <button onClick={prevSlide}>Previous</button>
       <div className="image-viewport">
-        <div className="image-container">
+        <div className="image-container col-md-3">
           {visibleImages.map((image, index) => (
             <img
               key={index}
