@@ -81,9 +81,7 @@ const Header = () => {
               </div>
               <div className="row">
                 <div className="col-md-9">
-                  <button onClick={toggleMobileMenu} className="mobile-menu-toggle">
-                    <i className={`fa ${isMobileMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
-                  </button>
+                  
                   <nav className={`navigation ${isMobileMenuOpen ? 'open' : 'close'}`}>
                     <ul>
                       <li> <Link to="/">Home</Link></li>
@@ -103,11 +101,17 @@ const Header = () => {
                       <li><Link to="/ContactForm">Get In Touch</Link></li>
                     </ul>
                   </nav>
-                </div>
-                <div className="col-md-3">
-                  <div className="user-actions">
+                  <div className="user-actions resp1">
                     <button className="btn btn-primary"><Link to="/LoginForm">Sign In</Link></button>
                   </div>
+                </div>
+                <div className="col-md-3">
+                  <div className="user-actions resp">
+                    <button className="btn btn-primary"><Link to="/LoginForm">Sign In</Link></button>
+                  </div>
+                  <button onClick={toggleMobileMenu} className="mobile-menu-toggle">
+                    <i className={`fa ${isMobileMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
+                  </button>
                 </div>
               </div>
             </div>

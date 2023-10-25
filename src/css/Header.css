@@ -372,13 +372,28 @@ nav.navigation {
     }
   }
 }
-
+.resp1{
+  display: block;
+}
+.resp{
+  display: none;
+}
 @media only screen and (max-width:1024px) {
   /* Style for top-level menu items */
+  
+.resp1{
+  display: none;
+}
+.resp{
+  display: block;
+}
 .navigation>ul>li {
   display: block;
   position: relative;
   padding: 10px 5px;
+}
+.course-enquiry{
+  display: none;
 }
 
 .navigation.close{
@@ -391,6 +406,7 @@ nav.navigation {
 /* Mobile menu styles */
 .mobile-menu-toggle {
   display: block;
+  font-size: 50px;
 }
   .rounded-social-buttons .social-button {
     display: inline-block;
