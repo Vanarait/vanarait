@@ -20,8 +20,10 @@
   .feature {
     text-align: center;
     padding: 20px;
-    border-radius: 5px;
+    border-top-right-radius: 35px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #00e686;
+    border-bottom-left-radius: 35px;
   }
   
   .career-growth-features .feature img {

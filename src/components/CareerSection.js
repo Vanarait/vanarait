@@ -31,17 +31,19 @@ const services = [
 
 function CareerSection() {
   return (
-    <div className="career-section">
+    <div className="career-section container">
       <h2 className="section-title">Our Range of Services</h2>
-      <div className="service-container">
+      <div className="service-container row">
         {services.map((service, index) => (
-          <div className="service col-md-3" key={index}>
-            <div className={`service-icon ${service.icon}`}></div>
-            <h3>{service.title}</h3>
-            <p>{service.description}</p>
-            <Link to={service.link} className="learn-more">
-              Learn More
-            </Link>
+          <div className="col-md-3" key={index}>
+            <div className="service">
+              <div className={`service-icon ${service.icon}`}></div>
+              <h3>{service.title}</h3>
+              <p>{service.description}</p>
+              <Link to={service.link} className="learn-more">
+                Learn More
+              </Link>
+            </div>
           </div>
         ))}
       </div>

@@ -48,19 +48,21 @@ function StudentFeedback() {
   return (
     <div className="student-feedback">
       <h2 className="feedback-title">Recent Student Feedback and Ratings</h2>
-      <div className="feedback-list">
+      <div className="feedback-list row">
         {feedbackData.map((feedback, index) => (
-          <div key={index} className="feedback-item col-md-3">
-            <div className="user-info">
-              <FontAwesomeIcon icon={faUser} className="user-icon" size="2x" />
-              <div className="info-text">
-                <p className="student-name">{feedback.name}</p>
-                <p className="student-course">{feedback.course}</p>
+          <div key={index} className="col-md-4">
+            <div className="feedback-item">
+              <div className="user-info">
+                <FontAwesomeIcon icon={faUser} className="user-icon" size="2x" />
+                <div className="info-text">
+                  <p className="student-name">{feedback.name}</p>
+                  <p className="student-course">{feedback.course}</p>
+                </div>
               </div>
-            </div>
-            <p className="student-feedback">{feedback.feedback}</p>
-            <div className="student-rating">
-              <StarRating rating={feedback.rating} />
+              <p className="student-feedback">{feedback.feedback}</p>
+              <div className="student-rating">
+                <StarRating rating={feedback.rating} />
+              </div>
             </div>
           </div>
         ))}

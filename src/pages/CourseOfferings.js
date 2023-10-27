@@ -8,48 +8,48 @@ const CourseOfferings = () => {
       id: 1,
       title: 'React JS',
       durationMonths: 2,
-      originalPrice: '$199',
-      offerPrice: '$149',
+      originalPrice: '5000 INR',
+      offerPrice: '3000 INR',
       imageUrl: 'https://example.com/react-course-image.jpg', // Replace with actual image URL
     },
     {
       id: 2,
       title: 'Core and Advanced Java',
       durationMonths: 3,
-      originalPrice: '$249',
-      offerPrice: '$199',
+      originalPrice: '10000 INR',
+      offerPrice: '6000 INR',
       imageUrl: 'https://example.com/nodejs-course-image.jpg', // Replace with actual image URL
     },
     {
         id: 3,
         title: 'UI FullStack With Resct JS',
         durationMonths: 2,
-        originalPrice: '$199',
-        offerPrice: '$149',
+        originalPrice: '18000 INR',
+        offerPrice: '12000 INR',
         imageUrl: 'https://example.com/react-course-image.jpg', // Replace with actual image URL
       },
       {
         id: 4,
         title: 'Java FullStack With Resct JS',
         durationMonths: 3,
-        originalPrice: '$249',
-        offerPrice: '$199',
+        originalPrice: '32000 INR',
+        offerPrice: '16000 INR',
         imageUrl: 'https://example.com/nodejs-course-image.jpg', // Replace with actual image URL
       },
       {
         id: 5,
         title: 'AWS DevOps',
         durationMonths: 2,
-        originalPrice: '$199',
-        offerPrice: '$149',
+        originalPrice: '18000 INR',
+        offerPrice: '10000 INR',
         imageUrl: 'https://example.com/react-course-image.jpg', // Replace with actual image URL
       },
       {
         id: 6,
         title: 'Azure DevOps',
         durationMonths: 3,
-        originalPrice: '$249',
-        offerPrice: '$199',
+        originalPrice: '20000 INR',
+        offerPrice: '12000 INR',
         imageUrl: 'https://example.com/nodejs-course-image.jpg', // Replace with actual image URL
       },
     // Add more courses as needed
@@ -61,13 +61,12 @@ const CourseOfferings = () => {
       <ul className="course-list">
         {courses.map((course) => (
           <li key={course.id} className="course">
-            <img src={course.imageUrl} alt={course.title} />
             <h6>{course.title}</h6>
-            <p>
+            <p className="price-info">
               <span className='ct_cf'>Duration:</span> {course.durationMonths} months
             </p>
             <p className="price-info">
-              <span className='ct_cf'>Price:</span> {course.offerPrice} <span className="original-price">({course.originalPrice})</span>
+              <span className='ct_cf'>Price: </span> {course.offerPrice} <span className="original-price">({course.originalPrice})</span>
             </p>
             <button className="course-details-button">Course Details</button>
           </li>

@@ -1,7 +1,7 @@
 /* CourseOfferings.css */
 .course-offerings-container {
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 50px auto;
     padding: 20px;
   }
   
@@ -18,7 +18,6 @@
     border-radius: 5px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    text-align: center;
     transition: transform 0.2s;
     cursor: pointer;
   }
@@ -37,7 +36,15 @@
   .course h5 {
     margin: 20px 0 10px;
     color: #333;
+    text-align: center;
   }
+  .course h6 {
+    background-color: rgb(94 182 40 / 57%);
+    width: 240px;
+    text-align: center;
+    height: 100px;
+  padding-top: 40px;
+}
   
   .course p {
     font-size: 1rem;
@@ -45,11 +52,6 @@
     margin: 10px 0;
   }
   
-  .price-info {
-    font-size: 1rem;
-    display: flex;
-    justify-content: center;
-  }
   
   .original-price {
     text-decoration: line-through;
@@ -73,4 +75,5 @@
   }
   .ct_cf{
     color: red;
+    margin-right: 7px;
   }
