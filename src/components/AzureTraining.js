@@ -1,23 +1,17 @@
 import React from 'react';
+import TrainingCourse from './TrainingCourse'; // Import the shared component
 import '../css/AzureTraining.css';
-
-
 function AzureTraining() {
-
   return (
-    <div className="AzureTraining">
-      <div className="banner-content">
-        <h1 className="course-title">Azure DevOps Training</h1>
-        <h2 className="trainer">Online Training By Mr. Ramesh</h2>
-        <h3>Demo on 11<sup>th</sup> Nov 2023 @ 7am </h3>
-      <h4>Fee:5000</h4>
-      <a href="https://example.com" target="_blank" rel="noreferrer noopener">zoom link
-      </a>
-      <h5>please contact for any clarification:9494494085</h5>
-    
-              </div>
-    </div>
+    <TrainingCourse
+      title="Azure DevOps Training"
+      trainer="Mr. Ramesh"
+      date="11th Nov 2023 @ 7am"
+      fee="5000"
+      zoomLink="https://example.com"
+      contact="9494494085"
+      customStyle="azure-course" // Custom CSS class
+    />
   );
 }
-
 export default AzureTraining;

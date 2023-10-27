@@ -1,0 +1,18 @@
+.TrainingCourse{
+    padding: 15px;
+}
+.TrainingCourse a{
+    color: red;
+    padding: 5px;
+    margin: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #0ca;
+    box-shadow: 1px 1px 1px #000;
+}
+.TrainingCourse h5{
+    margin: 15px;
+    font-style:italic;
+    color: rgb(226, 226, 252);
+    font-size: 14px;
+}

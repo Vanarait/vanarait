@@ -72,7 +72,7 @@ const OnlineTrainingDetails = () => {
           data: 'register',
           render: function (data, type, row) {
             return `
-              <button type="button" class="btn btn-secondary white-color" onclick="window.open('${data}', '_blank');">
+              <button type="button" class="btn btn-danger white-color" onclick="window.open('${data}', '_blank');">
                 Register Now
               </button>
             `;

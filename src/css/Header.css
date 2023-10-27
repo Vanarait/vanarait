@@ -373,10 +373,10 @@ nav.navigation {
   }
 }
 .resp1{
-  display: block;
+  display: none;
 }
 .resp{
-  display: none;
+  display: block;
 }
 @media only screen and (max-width:1024px) {
   /* Style for top-level menu items */

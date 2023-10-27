@@ -25,7 +25,7 @@ const Home = () => {
 
   return (
     <div className="home">
-      <div className="container">
+      <div className="container-fluid">
         <div className='row sliders'>
           <div className='col-md-12'>
             <TextSlider />

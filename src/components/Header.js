@@ -108,7 +108,7 @@ const Header = () => {
                 </div>
                 <div className="col-md-3">
                   <div className="user-actions resp">
-                    <button className="btn btn-primary"><Link to="/LoginForm">Sign In</Link></button>
+                    <button className="btn btn-danger"><Link to="/LoginForm">Sign In</Link></button>
                   </div>
                   <button onClick={toggleMobileMenu} className="mobile-menu-toggle">
                     <i className={`fa ${isMobileMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
