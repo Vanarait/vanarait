@@ -37,7 +37,7 @@ const Home = () => {
         <div className='CareerGrowthFeatures'>
         <CareerGrowthFeatures />
         </div>
-        <div className='row studentFeedback'>
+        <div className='sf'>
           <StudentFeedback />
         </div>
         <div className='row clients'>

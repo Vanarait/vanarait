@@ -46,7 +46,7 @@ function StudentFeedback() {
   ];
 
   return (
-    <div className="student-feedback">
+    <div className="student-feedback container">
       <h2 className="feedback-title">Recent Student Feedback and Ratings</h2>
       <div className="feedback-list row">
         {feedbackData.map((feedback, index) => (

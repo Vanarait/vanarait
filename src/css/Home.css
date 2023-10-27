@@ -45,11 +45,7 @@
   .card button:hover {
     opacity: 0.7;
   }
-  
-.row.sliders {
-  color: red;
-  height: 350px;
-}
+ 
 .row.course-fee{
   background-color: rgb(168, 174, 181);
   padding: 50px 15px;
@@ -85,9 +81,5 @@
   .carousel-item{
     min-height: 450PX;
   }
-   
-.row.sliders {
-  color: red;
-  height: auto;
-}
+ 
 }
