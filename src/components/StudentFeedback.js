@@ -8,28 +8,40 @@ function StudentFeedback() {
   // Sample feedback and ratings data
   const feedbackData = [
     {
-      name: 'John Doe',
-      course: 'Web Development',
+      name: 'Sidramesh mudma',
+      course: 'UI Full Satack',
       feedback: 'Vanara IT helped me gain valuable skills and kickstart my career!',
       rating: 5, // Rating out of 5
     },
     {
-      name: 'Jane Smith',
-      course: 'Data Science',
+      name: 'Manikanta Shakarulu',
+      course: 'Java Full Stack',
       feedback: 'The instructors are excellent, and I enjoyed the real-world projects.',
       rating: 4,
     },
     {
-      name: 'Bob Johnson',
-      course: 'Mobile App Development',
+      name: 'Jeeva petupulu',
+      course: 'Java Full Stack',
       feedback: 'Flexible learning options made it easy to balance with my job.',
       rating: 5,
     },
     {
-      name: 'Ramesh Ask',
-      course: 'Machine Learning',
+      name: 'Ashok Mulla',
+      course: 'Java Full Stack',
       feedback: 'Great content and supportive community!',
       rating: 4,
+    },
+    {
+      name: 'Meghana Vadivelu',
+      course: 'React JS',
+      feedback: 'Flexible learning options made it easy to balance with my job.',
+      rating: 5,
+    },
+    {
+      name: 'Shiva MP',
+      course: 'React JS',
+      feedback: 'Great content and supportive community!',
+      rating: 3.5,
     },
   ];
 
@@ -48,7 +60,6 @@ function StudentFeedback() {
             </div>
             <p className="student-feedback">{feedback.feedback}</p>
             <div className="student-rating">
-              <span className="rating-label">Rating:</span>
               <StarRating rating={feedback.rating} />
             </div>
           </div>

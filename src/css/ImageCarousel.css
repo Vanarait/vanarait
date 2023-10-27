@@ -39,7 +39,8 @@
   
   .carousel-image {
     width: 350px; /* Fixed width for each image */
-    height: 150px; /* Fixed height for each image */
+    /* height: 150px; /* Fixed height for each image */
+    height: 350px ;
   }
   
   .carousel-image:last-child {
@@ -109,3 +110,11 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
   
+  .carousel-indicators{
+    display: none;
+  }
+@media only screen and (max-width:1024px) {
+  .carousel-item{
+    min-height: 450PX;
+  }
+}

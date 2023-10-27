@@ -45,4 +45,20 @@
     font-size: 16px;
     margin-top: 20px;
   }
-  
+  @media only screen and (max-width:1024px) {
+    .carousel-item{
+      min-height: 450PX;
+    }
+    .AzureTraining a {
+      padding: 5px;
+        margin-left: 15px;
+
+    }
+    
+    .AzureTraining h5 {
+      font-size: 14px;
+      margin-top: 20px;
+      font-style:italic;
+      color: #154048;
+    }
+  }

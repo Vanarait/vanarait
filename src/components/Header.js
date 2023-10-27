@@ -100,10 +100,11 @@ const Header = () => {
                       <li> <Link to="/TrainerRegistrationForm">Trainer Registration</Link></li>
                       <li><Link to="/ContactForm">Get In Touch</Link></li>
                     </ul>
-                  </nav>
+                    
                   <div className="user-actions resp1">
                     <button className="btn btn-primary"><Link to="/LoginForm">Sign In</Link></button>
                   </div>
+                  </nav>
                 </div>
                 <div className="col-md-3">
                   <div className="user-actions resp">

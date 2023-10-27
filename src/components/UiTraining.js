@@ -9,7 +9,7 @@ function UiTraining() {
       <h2> Online Training By Mr.Venkatesh </h2>
       <h3>Demo on 11<sup>th</sup> Nov 2023 @ 7am </h3>
       <h4>Fee:5000</h4>
-      <a href="https://www.vanarait.com" target="_blank" rel="noreferrer">click here for zoom link</a>
+      <a href="https://www.vanarait.com" target="_blank" rel="noreferrer">zoom link</a>
 
       <h5>please contact for any clarification:9494494085</h5>
     </div>

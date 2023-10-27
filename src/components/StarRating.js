@@ -10,7 +10,7 @@ function StarRating({ rating }) {
     </span>
   ));
 
-  return <div className="star-rating">{starIcons}</div>;
+  return <div className="star-rating"><span>Rating:</span><span className="starIcons">{starIcons}</span></div>;
 }
 
 export default StarRating;

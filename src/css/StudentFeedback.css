@@ -21,11 +21,14 @@
   border: 1px solid #ddd;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  min-width: 357px;
 }
 
 .user-info {
   display: flex;
   align-items: center;
+  margin-left: 15px;
 }
 
 .user-icon {
@@ -39,6 +42,8 @@
 
 .student-name {
   font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 0px;
 }
 
 .student-course {
@@ -53,4 +58,12 @@
   font-weight: bold;
   display: block;
   margin-top: 10px;
+}
+.student-rating{
+text-align:right;
+margin-right: 15px;
+margin-bottom: 15px;
+}
+.starIcons{
+  color: rgb(132, 112, 2);
 }
