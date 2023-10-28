@@ -25,7 +25,6 @@ const Home = () => {
 
   return (
     <div className="home">
-      <div className="container-fluid">
         <div className='row sliders'>
           <div className='col-md-12'>
             <TextSlider />
@@ -45,10 +44,8 @@ const Home = () => {
           <h2 className="animated-title">Our clients</h2>
         </div>
         <ImageCarousel images={images} autoScrollInterval={5000} />
-
         </div>
       </div>
-    </div >
   );
 };
 
