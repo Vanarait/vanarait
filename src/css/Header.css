@@ -58,6 +58,7 @@
 .navigation ul li ul.submenu li {
   list-style-type:circle;
   padding: 5px;
+  display: block;
 }
 
 /* Display submenu when parent list item is hovered */
