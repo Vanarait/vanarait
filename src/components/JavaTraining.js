@@ -9,7 +9,7 @@ function JavaTraining() {
       title="Java Fullstack With Major Project"
       trainer="Mr. Harsha"
       date="10th Nov 2023 @ 9am"
-      fee="8000"
+      fee="----"
       zoomLink="https://www.vanarait.com"
       contact="9494494085"
       customStyle="java-course" // Custom CSS class

@@ -8,7 +8,7 @@ function UiTraining() {
       title="UI Fullstack With React JS"
       trainer="Mr. Venkatesh"
       date="11th Nov 2023 @ 7am"
-      fee="5000"
+      fee="---"
       zoomLink="https://www.vanarait.com"
       contact="9494494085"
       customStyle="ui-course" // Custom CSS class

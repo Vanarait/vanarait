@@ -7,7 +7,7 @@ function AzureTraining() {
       title="Azure DevOps Training"
       trainer="Mr. Ramesh"
       date="11th Nov 2023 @ 7am"
-      fee="5000"
+      fee="----"
       zoomLink="https://example.com"
       contact="9494494085"
       customStyle="azure-course" // Custom CSS class
