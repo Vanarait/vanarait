@@ -4,7 +4,7 @@ import TextSlider from "../components/TextSlider";
 import CareerSection from "../components/CareerSection";
 import CareerGrowthFeatures from "../components/CareerGrowthFeatures";
 import StudentFeedback from "../components/StudentFeedback";
-import ImageCarousel from "../components/ImageCarousel";
+import ImageCarousel from "../components/Marquee";
 import '../css/Home.css';
 const Home = () => {
   const images = [
@@ -25,10 +25,9 @@ const Home = () => {
 
   return (
     <div className="home">
+      <div className="container-fluid">
         <div className='row sliders'>
-          <div className='col-md-12'>
             <TextSlider />
-          </div>
         </div>
         <div className='careerSection'>
           <CareerSection />
@@ -44,8 +43,10 @@ const Home = () => {
           <h2 className="animated-title">Our clients</h2>
         </div>
         <ImageCarousel images={images} autoScrollInterval={5000} />
+
         </div>
       </div>
+    </div >
   );
 };
 

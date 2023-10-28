@@ -1,0 +1,49 @@
+/* Marquee.css */
+
+.marquee-container {
+    max-width: 1024px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 10px auto 80px auto;
+}
+
+.marquee-image {
+    width: 150px;
+    /* Adjust image width as needed */
+    height: 100px;
+    /* Maintain aspect ratio */
+    margin-right: 20px;
+    /* Adjust ma*/
+    border: 1px solid #2de;
+    padding: 15px;
+    animation: marquee 10s linear infinite;
+    /* Adjust the animation duration as needed */
+    transition: transform 0.5s ease;
+}
+
+.marquee-image:last-child {
+    margin-right: 0;
+}
+
+
+
+/* Scroll animation */
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.marquee-container {
+    animation: marquee linear infinite;
+    /* Apply the scroll animation */
+}
+
+/* Your other marquee styles go here */

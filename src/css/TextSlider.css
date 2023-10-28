@@ -7,4 +7,7 @@
     transition: background-color 0.13s, transform 0.13s;
 
   }
+  .carousel{
+padding: 0px;
+  }
   
