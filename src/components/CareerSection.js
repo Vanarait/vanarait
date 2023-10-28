@@ -41,7 +41,7 @@ function CareerSection() {
               <h3>{service.title}</h3>
               <p>{service.description}</p>
               <p><Link to={service.link} className="learn-more">
-                Learn More
+                 More Details
               </Link></p>
             </div>
           </div>
