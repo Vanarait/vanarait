@@ -42,10 +42,8 @@ const Header = () => {
               </div>
             </div>
             <div className="col-md-9">
-
               <div className="row">
                 <div className="col-md-7">
-
                   {/* Contact Information */}
                   <div className="contact-info">
                     <div className="course-enquiry">
@@ -60,7 +58,11 @@ const Header = () => {
                   <SocialIcons />
                 </div>
                 <div className='col-md-2'>
-                <button className="btn btn-danger"><Link to="/LoginForm">Sign In</Link></button>
+                  <button className="btn btn-danger"><Link to="/LoginForm">Sign In</Link></button>
+                  <button onClick={toggleMobileMenu} className="mobile-menu-toggle">
+                    <i className={`fa ${isMobileMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
+                  </button>
+
                 </div>
               </div>
               <div className="row">
@@ -71,7 +73,6 @@ const Header = () => {
             </div>
           </div>
         </div>
-
       </div>
     </header>
   );

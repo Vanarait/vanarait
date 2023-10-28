@@ -29,12 +29,12 @@
 .navigation ul {
   list-style: none;
   padding: 0;
-  display: flex;
   margin: 0;
 }
 
 .navigation ul li {
   margin: 0 10px;
+  display: inline;
 }
 
 .navigation ul li a {
