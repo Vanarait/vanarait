@@ -14,7 +14,7 @@ const menuItems = [
     ],
   },
   { label: 'Courses Offering', link: '/CourseOfferings' },
-  { label: 'Batch Schedules', link: '/BatchSchedules' },
+  { label: 'New Batch Schedules', link: '/OnlineTrainingDetails' },
   { label: 'Trainer Registration', link: '/TrainerRegistrationForm' },
   { label: 'Get In Touch', link: '/ContactForm' },
   // Add more menu items as needed
