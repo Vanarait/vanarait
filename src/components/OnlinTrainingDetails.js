@@ -97,7 +97,8 @@ const OnlineTrainingDetails = () => {
   return (
     <div className="container OnlineTrainingDetails">
       <h2>Training Details</h2>
-      <table id="trainingTable" className="table responsive-table">
+      <div className='responsive-table'>
+      <table id="trainingTable" className="table">
         <thead>
           <tr>
             <th>S.No</th>
@@ -110,6 +111,7 @@ const OnlineTrainingDetails = () => {
         </thead>
         <tbody></tbody>
       </table>
+    </div>
     </div>
   );
 };
