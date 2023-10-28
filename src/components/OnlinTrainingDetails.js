@@ -84,6 +84,8 @@ const OnlineTrainingDetails = () => {
       pageLength: 10,
       searching: true,
       info: true,
+      responsive: true, // Enable Responsive extension
+
     });
 
     // Make sure to destroy the DataTable instance when the component unmounts
@@ -95,7 +97,7 @@ const OnlineTrainingDetails = () => {
   return (
     <div className="container OnlineTrainingDetails">
       <h2>Training Details</h2>
-      <table id="trainingTable" className="table">
+      <table id="trainingTable" className="table responsive-table">
         <thead>
           <tr>
             <th>S.No</th>
