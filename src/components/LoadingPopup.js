@@ -19,7 +19,7 @@ const LoadingPopup = () => {
                     X
                 </button>
 
-                <h1 className="title"> ASHIOK IT</h1>
+                <h1 className="title"> Vanara IT</h1>
                 <p className="description">Learn, Lead, and Discover the World of AWS</p>
                 <p className="info">Event Details:</p>
                 <ul className="event-details">
