@@ -27,8 +27,8 @@ const LoadingPopup = () => {
                     <li>November 14th</li>
                     <li>10+ Years of Experience</li>
                     <li>Time: 7:00 AM (IST)</li>
-                    <li>Zoom Link: <a href="https://zoom.us/j/86337318064" target="_blank" rel="noopener noreferrer">Join Event</a></li>
-                    <li>Password: 112233</li>
+                    <li>Zoom Link: <a href="https://zoom.us/" target="_blank" rel="noopener noreferrer">Join Event</a></li>
+                    <li>Password: 000123</li>
                     <li>Contact: +91949449 49085</li>
                     <li>Website: <a href="http://www.vanarait.com" target="_blank" rel="noopener noreferrer">www.ashokitech.com</a></li>
                 </ul>
