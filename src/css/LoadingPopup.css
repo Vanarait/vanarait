@@ -1,0 +1,82 @@
+/* Styles for the loading overlay */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Styles for the container inside the overlay */
+.loading-overlay .container {
+    max-width: 400px;
+    width: 100%;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+}
+/* Styles for the close button */
+.loading-overlay .container .close-button {
+    position: absolute;
+    top: 12%;
+    right: 38%;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #ff5733; /* Color for the close icon */
+}
+
+/* Style on hover for the close icon */
+.loading-overlay .container .close-button:hover {
+    color: #ff5733; /* Change to your preferred hover color */
+}
+
+
+/* Styles for various text elements inside the container */
+.loading-overlay .title {
+    font-size: 36px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.loading-overlay .description {
+    font-size: 18px;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+.loading-overlay .info {
+    font-size: 20px;
+    color: #ff5733;
+    margin-bottom: 20px;
+}
+
+.loading-overlay .event-details {
+    list-style: none;
+    padding: 0;
+}
+
+.loading-overlay .event-details li {
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+/* Styles for hyperlinks */
+.loading-overlay a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.loading-overlay a:hover {
+    text-decoration: underline;
+}

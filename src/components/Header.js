@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import '../css/Header.css';
 import Navigation from '../components/Navigation';
-import SocialIcons from '../components/SocialIcons'; // Import the HeaderContent component
+import SocialIcons from '../components/SocialIcons'; // Im
 
 import { Link } from 'react-router-dom';
 

@@ -5,7 +5,7 @@ import TrainingCourse from './TrainingCourse'; // Import the shared component
 function UiTraining() {
   return (
     <TrainingCourse
-      title="UI Fullstack With React JS"
+      title="UI Fullstack With Real Time Project in React JS "
       trainer="Mr. Venkatesh"
       date="11th Nov 2023 @ 7am"
       fee="---"

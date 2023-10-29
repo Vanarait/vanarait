@@ -4,7 +4,7 @@ import '../css/AzureTraining.css';
 function AzureTraining() {
   return (
     <TrainingCourse
-      title="Azure DevOps Training"
+      title="Azure DevOps Training With Realtime Case Study Project"
       trainer="Mr. Ramesh"
       date="11th Nov 2023 @ 7am"
       fee="----"

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -16,10 +16,14 @@ import LoginForm from './components/LoginForm';
 import ForgotPasswordForm from './components/ForgotPasswordForm';
 import RegistrationForm from './components/RegistrationForm';
 import CourseOfferings from './pages/CourseOfferings';
+import LoadingPopup from '../src/components/LoadingPopup';
 
 const AppRouter = () => {
+ 
   return (
-    <Router>
+     
+       <Router>
+        <LoadingPopup />  
           <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -37,7 +41,7 @@ const AppRouter = () => {
        <Route path="/courses" element={<Courses />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Footer />
+      <Footer />  
     </Router>
   );
 };
