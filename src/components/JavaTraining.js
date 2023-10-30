@@ -6,7 +6,7 @@ import '../css/JavaTraining.css';
 function JavaTraining() {
   return (
     <TrainingCourse
-      title="Java Fullstack With Major Project in cloud Technologies"
+      title="Java Fullstack With Major Project in cloud"
       trainer="Mr. Harsha"
       date="10th Nov 2023 @ 9am"
       fee="----"

@@ -21,7 +21,6 @@ import LoadingPopup from '../src/components/LoadingPopup';
 const AppRouter = () => {
  
   return (
-     
        <Router>
         <LoadingPopup />  
           <Header />
