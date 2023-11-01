@@ -15,13 +15,14 @@ const LoadingPopup = () => {
     return (
         <div className="loading-overlay">
             <div className="container">
-            <button className="close-button" onClick={closePopup}>
+                <button className="close-button" onClick={closePopup}>
                     X
                 </button>
 
                 <h3 className="title"> JAVA FULL STACK TRAINING</h3>
                 <p className="info">Details:</p>
                 <ul className="event-details">
+                    <li>Online Training</li>
                     <li>Time: 7:00 AM (IST)</li>
                     <li>Zoom Link: <a href="https://zoom.us/" target="_blank" rel="noopener noreferrer">Join Event</a></li>
                     <li>Password: 000123</li>
