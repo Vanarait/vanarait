@@ -42,8 +42,7 @@
 
 /* Styles for various text elements inside the container */
 .loading-overlay .title {
-    font-size: 36px;
-    color: #333333;
+    color: #4acd17;
     margin-bottom: 20px;
 }
 

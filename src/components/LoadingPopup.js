@@ -19,13 +19,9 @@ const LoadingPopup = () => {
                     X
                 </button>
 
-                <h1 className="title"> Vanara IT</h1>
-                <p className="description">Learn, Lead, and Discover the World of AWS</p>
-                <p className="info">Event Details:</p>
+                <h3 className="title"> JAVA FULL STACK TRAINING</h3>
+                <p className="info">Details:</p>
                 <ul className="event-details">
-                    <li>By Mr. Ramesh</li>
-                    <li>November 14th</li>
-                    <li>10+ Years of Experience</li>
                     <li>Time: 7:00 AM (IST)</li>
                     <li>Zoom Link: <a href="https://zoom.us/" target="_blank" rel="noopener noreferrer">Join Event</a></li>
                     <li>Password: 000123</li>
