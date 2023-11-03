@@ -16,7 +16,7 @@ const trainingData = [
   },
   
   {
-    title: 'Data structures in Cloud',
+    title: 'Data structures and Data Design patterns in Java',
     trainer: 'Mr. Ramesh',
     date: '21th Nov 2023 @ 6pm',
     fee: '5000',
