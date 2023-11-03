@@ -2,7 +2,7 @@
     padding: 15px;
 }
 .TrainingCourse a{
-    color: red;
+    color: rgb(31, 1, 1);
     padding: 5px;
     margin: 15px;
     text-decoration: none;
@@ -15,4 +15,16 @@
     font-style:italic;
     color: rgb(226, 226, 252);
     font-size: 14px;
+}
+.javaCourse{
+    background-color: aqua;
+    color: darkblue;
+}
+.uiCourse{
+    background-color: #05334a;
+    color: #73b3d3;
+}
+.dataCourse{
+    background-color: aquamarine;
+    color: #01131c;
 }
