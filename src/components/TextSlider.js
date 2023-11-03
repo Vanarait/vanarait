@@ -6,10 +6,10 @@ import '../css/TextSlider.css';
 const trainingData = [
   
   {
-    title: 'JAVA Fullstack With Real Time Project in Cloud',
+    title: 'UI Fullstack With Real Time Project in Cloud',
     trainer: 'Mr. Ramesh',
     date: '21th Nov 2023 @ 9am',
-    fee: '---',
+    fee: '8000',
     zoomLink: 'https://www.vanarait.com',
     contact: '9494494085',
     customStyle: 'uiCourse',
@@ -19,7 +19,7 @@ const trainingData = [
     title: 'Data structures in Cloud',
     trainer: 'Mr. Ramesh',
     date: '21th Nov 2023 @ 6pm',
-    fee: '---',
+    fee: '5000',
     zoomLink: 'https://www.vanarait.com',
     contact: '9494494085',
     customStyle: 'dataCourse',
@@ -29,7 +29,7 @@ const trainingData = [
     title: 'JAVA Fullstack With Real Time Project in Cloud',
     trainer: 'Mr. Venkatesh',
     date: '28th Nov 2023 @ 8am',
-    fee: '---',
+    fee: '12000',
     zoomLink: 'https://www.vanarait.com',
     contact: '9494494085',
     customStyle: 'javaCourse',
