@@ -75,7 +75,7 @@
 }
 @media only screen and (max-width:1024px) {
   .carousel-item{
-    min-height: 450PX;
+    min-height: 360PX;
   }
  
 }
