@@ -28,7 +28,7 @@ function StudentFeedback() {
     {
       name: 'Ashok Mulla',
       course: 'Java Full Stack',
-      feedback: 'Great content and supportive community!',
+      feedback: 'Great content, realtime Instructor,Hands-on Experience,Feedback and Assessment.',
       rating: 4,
     },
     {
@@ -40,7 +40,7 @@ function StudentFeedback() {
     {
       name: 'Shiva MP',
       course: 'React JS',
-      feedback: 'Great content and supportive community!',
+      feedback: 'Great content, realtime Instructor,Hands-on Experience,Feedback and Assessment.',
       rating: 3.5,
     },
   ];

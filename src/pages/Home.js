@@ -27,23 +27,31 @@ const Home = () => {
     <div className="home">
       <div className="container-fluid">
         <div className='row sliders'>
-            <TextSlider />
+          <TextSlider />
         </div>
-        <div className='careerSection'>
+        <div className='row careerSection'>
+          <div className='container'>
           <CareerSection />
+          </div>
         </div>
         <div className='CareerGrowthFeatures'>
-        <CareerGrowthFeatures />
+          <CareerGrowthFeatures />
         </div>
-        <div className='sf'>
+        <div className='row sf'>
+          <div className='container'>
           <StudentFeedback />
+          </div>
         </div>
         <div className='row clients'>
-        <div className="clients-title">
-          <h2 className="animated-title">Our clients</h2>
-        </div>
-        <ImageCarousel images={images} autoScrollInterval={5000} />
-
+          <div className='container'>
+          <div className='container'>
+            
+            <div className="clients-title">
+              <h2 className="ourClients">Our clients</h2>
+            </div>
+            <ImageCarousel images={images} autoScrollInterval={5000} />
+          </div>
+          </div>
         </div>
       </div>
     </div >

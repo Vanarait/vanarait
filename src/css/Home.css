@@ -1,3 +1,6 @@
+.careerSection{
+  background-color: #3498db;
+}
 .shape-container {
     background-color: #3498db; /* Background color for the shape */
   /*  width: 200px;*/
@@ -10,9 +13,6 @@
 }
 .shape-text1{
     text-align:center;
-}
-.section-title{
-    margin: 30px 0px 20px 30px;
 }
 .trainDetails{
     padding: 15px 15px 50px 15px;
@@ -50,21 +50,14 @@
   background-color: rgb(168, 174, 181);
   padding: 50px 15px;
 }
- h2 {
-  text-align: center;
-  font-size: 28px;
-  color: #a68d05;
-  margin-bottom: 20px;
-  animation: fadeInUp 1s ease;
-  text-transform: uppercase; /* Convert the text to uppercase */
-  font-weight: bold; /* Make the text bold */
-  letter-spacing: 2px; /* Add letter spacing */
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
-}
+ 
 .clients{
-  background-color: aquamarine;
+  background-color: #000407c7;
 }
-
+.ourClients{
+  padding: 15px;
+  color: #ede7ef;
+}
 @keyframes fadeInUp {
   0% {
     opacity: 0;
