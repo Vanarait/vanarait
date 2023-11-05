@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <WhatsAppChatbot />
-      <p>&copy; 2023 Your Company. All rights reserved reserved.</p>
+      <p>&copy; 2023 Your Company. All rights reserved.</p>
     </footer>
   );
 };
