@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import '../css/LoginForm.css';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import "../css/LoginForm.css";
 
 class LoginForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      email: '',
-      password: '',
+      email: "",
+      password: "",
     };
   }
 
@@ -22,13 +22,25 @@ class LoginForm extends Component {
 
   render() {
     return (
-      <div class="login-form">
+      <div className="login-form">
         <h2>Login</h2>
         <form onSubmit={this.handleSubmit}>
           <label>Email:</label>
-          <input type="email" name="email" value={this.state.email} onChange={this.handleInputChange} required />
+          <input
+            type="email"
+            name="email"
+            value={this.state.email}
+            onChange={this.handleInputChange}
+            required
+          />
           <label>Password:</label>
-          <input type="password" name="password" value={this.state.password} onChange={this.handleInputChange} required />
+          <input
+            type="password"
+            name="password"
+            value={this.state.password}
+            onChange={this.handleInputChange}
+            required
+          />
           <button type="submit">Login</button>
         </form>
         <Link to="/ForgotPasswordForm">Forgot Password?</Link>

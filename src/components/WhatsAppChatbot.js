@@ -1,5 +1,5 @@
-import React from 'react';
-import '../css/WhatsAppChatbotPopup.css';
+import React from "react";
+import "../css/WhatsAppChatbotPopup.css";
 
 class WhatsAppChatbot extends React.Component {
   constructor(props) {
@@ -19,14 +19,14 @@ class WhatsAppChatbot extends React.Component {
   render() {
     return (
       <div className="chatbot-container">
-        <div className={`chatbot-popup ${this.state.isOpen ? 'open' : ''}`}>
+        <div className={`chatbot-popup ${this.state.isOpen ? "open" : ""}`}>
           {/* Close button */}
           <button className="close-button" onClick={this.toggleChatbot}>
-            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i className="fa fa-window-close" aria-hidden="true"></i>
           </button>
-          <img src="images/logo.png" alt="Logo" className='img-fluid'/>
+          <img src="images/logo.png" alt="Logo" className="img-fluid" />
           {/* WhatsApp chat link */}
-          <div className='great'>
+          <div className="great">
             <p>Hi there,</p>
             <p>Welcome to Vanara IT..!!</p>
             <p>How can we help you?</p>
@@ -41,7 +41,8 @@ class WhatsAppChatbot extends React.Component {
           </a>
         </div>
         <button className="chatbot-icon" onClick={this.toggleChatbot}>
-          <i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i> Message Us
+          <i className="fa fa-whatsapp fa-2x" aria-hidden="true"></i> Chat with
+          us
         </button>
       </div>
     );
