@@ -96,7 +96,11 @@ const Navigation = () => {
       <Container>
         <Navbar.Brand>
           <Link to="/">
-            <Image src={Logo} alt="Logo not found" width={300} />
+            <Image
+              src={Logo}
+              alt="Logo not found"
+              width={isMobile ? 250 : 300}
+            />
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
