@@ -1,38 +1,37 @@
-import React from 'react';
-import { Carousel } from 'react-bootstrap';
-import TrainingCourse from './TrainingCourse';
-import '../css/TextSlider.css';
+import React from "react";
+import { Carousel } from "react-bootstrap";
+import TrainingCourse from "./TrainingCourse";
+import "../css/TextSlider.css";
 
 const trainingData = [
-  
   {
-    title: 'UI Fullstack With Real Time Project in Cloud',
-    trainer: 'Mr. Ramesh',
-    date: '21th Nov 2023 @ 9am',
-    fee: '8000 INR',
-    zoomLink: 'https://www.vanarait.com',
-    contact: '9494494085',
-    customStyle: 'uiCourse',
+    title: "UI Full Stack With Real Time Project in Cloud",
+    trainer: "Mr. Ramesh",
+    date: "21th Nov 2023 @ 9am",
+    fee: "8000 INR",
+    zoomLink: "https://www.vanarait.com",
+    contact: "9494494085",
+    customStyle: "uiCourse",
   },
-  
+
   {
-    title: 'Data structures and Design patterns in Java',
-    trainer: 'Mr. Ramesh',
-    date: '21th Nov 2023 @ 6pm',
-    fee: '5000 INR',
-    zoomLink: 'https://www.vanarait.com',
-    contact: '9494494085',
-    customStyle: 'dataCourse',
+    title: "Data structures and Design patterns in Java",
+    trainer: "Mr. Ramesh",
+    date: "21th Nov 2023 @ 6pm",
+    fee: "5000 INR",
+    zoomLink: "https://www.vanarait.com",
+    contact: "9494494085",
+    customStyle: "dataCourse",
   },
-  
+
   {
-    title: 'JAVA Fullstack With Real Time Project in Cloud',
-    trainer: 'Mr. Venkatesh',
-    date: '28th Nov 2023 @ 8am',
-    fee: '12000 INR',
-    zoomLink: 'https://www.vanarait.com',
-    contact: '9494494085',
-    customStyle: 'javaCourse',
+    title: "JAVA Full Stack With Real Time Project in Cloud",
+    trainer: "Mr. Venkatesh",
+    date: "28th Nov 2023 @ 8am",
+    fee: "12000 INR",
+    zoomLink: "https://www.vanarait.com",
+    contact: "9494494085",
+    customStyle: "javaCourse",
   },
   // Add similar objects for Java and Azure training
 ];
