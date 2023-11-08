@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Container, Nav, Navbar, Button, Stack } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import SocialIcons from "../components/SocialIcons";
@@ -19,7 +19,7 @@ const StyledNav = styled(Navbar)`
   }
 `;
 
-function PrimaryNav() {
+const PrimaryNav = () => {
   const stackStyles = isMobile()
     ? { direction: "vertical" } // Apply vertical stacking for mobile screens
     : { direction: "horizontal" }; // No additional styles for non-mobile screens
@@ -57,6 +57,6 @@ function PrimaryNav() {
       </Container>
     </StyledNav>
   );
-}
+};
 
 export default PrimaryNav;

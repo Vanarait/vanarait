@@ -9,6 +9,7 @@ const StyledNav = styled(Navbar)`
   margin-top: ${isMobile() ? "144px" : "64px"};
   .primaryNav {
     .nav-item {
+      border-bottom: ${isMobile() && "1px solid #6e6e6e"};
       padding: 0 15px 0px 0px;
       &:hover {
         background: #6c757d;
@@ -44,6 +45,11 @@ const menuItems = [
 
 const Navigation = () => {
   const [scrolling, setScrolling] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -81,7 +87,13 @@ const Navigation = () => {
             />
           </Link>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Toggle onClick={toggleMenu}>
+          {showMenu ? (
+            <i className="fa fa-times fa-lg" aria-hidden="true"></i>
+          ) : (
+            <i className="fa fa-bars fa-lg" aria-hidden="true"></i>
+          )}
+        </Navbar.Toggle>
         <Navbar.Collapse
           id="responsive-navbar-nav"
           style={{ flexDirection: "column" }}
