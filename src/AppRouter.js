@@ -18,9 +18,10 @@ import ForgotPasswordForm from "./components/ForgotPasswordForm";
 import RegistrationForm from "./components/RegistrationForm";
 import CourseOfferings from "./pages/CourseOfferings";
 import LoadingPopup from "../src/components/LoadingPopup";
+import isMobile from "./components/Common/MobileView";
 
 const MainContainer = styled.div`
-  margin-top: 110px;
+  margin-top: ${isMobile() ? "235px" : "165px"};
 `;
 
 const AppRouter = () => {
