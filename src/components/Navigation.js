@@ -1,22 +1,15 @@
 import React, { useEffect, useState } from "react";
-import {
-  Navbar,
-  Nav,
-  NavDropdown,
-  Image,
-  Container,
-  Button,
-  Stack,
-} from "react-bootstrap";
+import { Navbar, Nav, NavDropdown, Image, Container } from "react-bootstrap";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import SocialIcons from "../components/SocialIcons";
 import Logo from "../Assests/Images/logo.png";
+import isMobile from "./Common/MobileView";
 
 const StyledNav = styled(Navbar)`
+  margin-top: ${isMobile() ? "144px" : "64px"};
   .primaryNav {
     .nav-item {
-      padding: 0 5px 0px 0px;
+      padding: 0 15px 0px 0px;
       &:hover {
         background: #6c757d;
         border-radius: 5px;
@@ -24,20 +17,6 @@ const StyledNav = styled(Navbar)`
     }
     a {
       color: #fff;
-    }
-  }
-  .navbar-nav {
-    .hstack {
-      span {
-        color: #fff;
-        margin-right: -10px;
-      }
-      .nav-link {
-        padding: 0px;
-        margin-right: 12px;
-        color: #0d6efd;
-        text-decoration: underline;
-      }
     }
   }
 `;
@@ -64,42 +43,41 @@ const menuItems = [
 ];
 
 const Navigation = () => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [scrolling, setScrolling] = useState(false);
 
   useEffect(() => {
-    const checkIsMobile = () => {
-      const mediaQuery = window.matchMedia("(max-width: 767px)");
-      setIsMobile(mediaQuery.matches);
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
     };
 
-    checkIsMobile();
-    window.addEventListener("resize", checkIsMobile);
-
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener("resize", checkIsMobile);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  const stackStyles = isMobile
-    ? { direction: "vertical" } // Apply vertical stacking for mobile screens
-    : { direction: "horizontal" }; // No additional styles for non-mobile screens
 
   return (
     <StyledNav
       collapseOnSelect
       expand="lg"
-      className="bg-body-tertiary"
-      bg="dark"
+      className={scrolling ? "navbar-sticky" : "navbar-top bg-body-tertiary"}
       data-bs-theme="dark"
+      bg="dark"
       fixed="top"
     >
       <Container>
-        <Navbar.Brand>
+        <Navbar.Brand
+          className={scrolling && !isMobile() ? "d-none" : "navbar-brand"}
+        >
           <Link to="/">
             <Image
               src={Logo}
               alt="Logo not found"
-              width={isMobile ? 250 : 300}
+              width={isMobile() ? 250 : 300}
             />
           </Link>
         </Navbar.Brand>
@@ -108,19 +86,7 @@ const Navigation = () => {
           id="responsive-navbar-nav"
           style={{ flexDirection: "column" }}
         >
-          <Nav className="me-auto">
-            <Stack direction={stackStyles.direction} gap={isMobile ? 0 : 3}>
-              <span>Course Enquiry:</span>
-              <Nav.Link href="tel:+919494494085">+91 9494494085</Nav.Link>
-              <span>Email: </span>
-              <Nav.Link href="mailto:hr@vanarait.com">hr@vanarait.com</Nav.Link>
-              <SocialIcons />
-              <Button variant="danger">
-                <Link to="/LoginForm">Sign In</Link>
-              </Button>
-            </Stack>
-          </Nav>
-          <Nav className="me-auto primaryNav">
+          <Nav className={`${!scrolling && "me-auto"} primaryNav`}>
             {menuItems.map((menuItem, index) =>
               menuItem.submenu ? (
                 <NavDropdown title={menuItem.label} key={index}>
