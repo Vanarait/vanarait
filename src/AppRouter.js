@@ -19,6 +19,7 @@ import RegistrationForm from "./components/RegistrationForm";
 import CourseOfferings from "./pages/CourseOfferings";
 import LoadingPopup from "../src/components/LoadingPopup";
 import isMobile from "./components/Common/MobileView";
+import WhatsAppChatbot from "./components/WhatsAppChatbot";
 
 const MainContainer = styled.div`
   margin-top: ${isMobile() ? "154px" : "165px"};
@@ -62,6 +63,7 @@ const AppRouter = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </MainContainer>
+      <WhatsAppChatbot />
       <Footer />
     </Router>
   );

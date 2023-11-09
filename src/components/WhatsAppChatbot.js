@@ -6,8 +6,7 @@ import styled from "styled-components";
 
 const StyledBtn = styled(Button)`
   z-index: 100;
-  bottom: ${isMobile() && "57px"};
-  right: ${isMobile() && "-10px"};
+  right: ${isMobile() && "-35px"};
   .fa-whatsapp {
     margin: ${isMobile() && "0px"};
   }

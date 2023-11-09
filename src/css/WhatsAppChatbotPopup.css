@@ -5,8 +5,9 @@
 
 .chatbot-icon {
   position: fixed;
-  bottom: 105px;
-  right: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -85px;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   background-color: #25d366;
@@ -24,6 +25,7 @@
 }
 
 .chatbot-popup {
+  z-index: 100;
   display: none;
   position: fixed;
   bottom: 100px;

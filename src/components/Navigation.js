@@ -10,7 +10,7 @@ const StyledNav = styled(Navbar)`
   .primaryNav {
     .nav-item {
       border-bottom: ${isMobile() && "1px solid #6e6e6e"};
-      padding: 0 15px 0px 0px;
+      margin-right: 14px;
       &:hover {
         background: #6c757d;
         border-radius: 5px;
