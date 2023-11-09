@@ -1,6 +1,7 @@
 import React from "react";
 import "../css/Footer.css"; // Import the CSS file for sty
 import WhatsAppChatbot from "./WhatsAppChatbot";
+
 const Footer = () => {
   return (
     <footer className="footer">

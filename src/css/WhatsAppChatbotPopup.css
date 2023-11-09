@@ -5,15 +5,17 @@
 
 .chatbot-icon {
   position: fixed;
-  bottom: 5px;
-  right: 0px;
+  bottom: 105px;
+  right: -60px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
   background-color: #25d366;
   color: white;
-  padding: 10px 20px;
+  padding: 8px 12px;
+  rotate: -90deg;
   border: none;
   display: flex;
   align-items: center;
-  border-radius: 50px;
   cursor: pointer;
 
   .fa {

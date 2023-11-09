@@ -6,7 +6,7 @@ import Logo from "../Assests/Images/logo.png";
 import isMobile from "./Common/MobileView";
 
 const StyledNav = styled(Navbar)`
-  margin-top: ${isMobile() ? "144px" : "64px"};
+  margin-top: ${isMobile() ? "64px" : "64px"};
   .primaryNav {
     .nav-item {
       border-bottom: ${isMobile() && "1px solid #6e6e6e"};

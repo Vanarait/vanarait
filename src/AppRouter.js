@@ -21,7 +21,7 @@ import LoadingPopup from "../src/components/LoadingPopup";
 import isMobile from "./components/Common/MobileView";
 
 const MainContainer = styled.div`
-  margin-top: ${isMobile() ? "235px" : "165px"};
+  margin-top: ${isMobile() ? "154px" : "165px"};
 `;
 
 const AppRouter = () => {
