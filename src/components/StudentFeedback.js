@@ -9,7 +9,7 @@ function StudentFeedback() {
   const feedbackData = [
     {
       name: "Sidramesh mudma",
-      course: "UI Full Satack",
+      course: "UI Full Stack",
       feedback:
         "Vanara IT helped me gain valuable skills and kickstart my career!",
       rating: 5, // Rating out of 5
