@@ -10,7 +10,7 @@ function UiTraining() {
       date="11th Nov 2023 @ 7am"
       fee="---"
       zoomLink="https://www.vanarait.com"
-      contact="9494494085"
+      contact="+91 9392926261"
       customStyle="ui-course" // Custom CSS class
     />
   );
