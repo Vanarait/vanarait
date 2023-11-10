@@ -10,7 +10,7 @@ const trainingData = [
     date: "21th Nov 2023 @ 9am",
     fee: "8000 INR",
     zoomLink: "https://www.vanarait.com",
-    contact: "9494494085",
+    contact: "+91 9392926261",
     customStyle: "uiCourse",
   },
 
@@ -20,7 +20,7 @@ const trainingData = [
     date: "21th Nov 2023 @ 6pm",
     fee: "5000 INR",
     zoomLink: "https://www.vanarait.com",
-    contact: "9494494085",
+    contact: "+91 9392926261",
     customStyle: "dataCourse",
   },
 
@@ -30,7 +30,7 @@ const trainingData = [
     date: "28th Nov 2023 @ 8am",
     fee: "12000 INR",
     zoomLink: "https://www.vanarait.com",
-    contact: "9494494085",
+    contact: "+91 9392926261",
     customStyle: "javaCourse",
   },
   // Add similar objects for Java and Azure training
