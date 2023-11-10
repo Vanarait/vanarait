@@ -56,7 +56,7 @@ const PrimaryNav = () => {
           >
             <div className="d-flex">
               <span>{isMobile() ? "Enquiry :" : "Course Enquiry:"}</span>
-              <Nav.Link href="tel:+919494494085">+91 9494494085</Nav.Link>
+              <Nav.Link href="tel:+919392926261">+91 9392926261</Nav.Link>
             </div>
             <div className="d-flex">
               <span>Email: </span>

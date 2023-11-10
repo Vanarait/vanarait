@@ -81,9 +81,9 @@ const Footer = () => {
           <Col lg={3}>
             <h5 className={isMobile() ? "mt-4" : ""}>CONTACT US</h5>
             <Nav className="me-auto flex-column mb-4">
-              <Nav.Link href="tel:+919494494085" className="mb-0 p-0">
+              <Nav.Link href="tel:+919392926261" className="mb-0 p-0">
                 <i className="fa fa-phone-square" aria-hidden="true"></i>
-                +91 9494494085
+                +91 9392926261
               </Nav.Link>
               <Nav.Link href="mailto:hr@vanarait.com" className="mb-0 p-0">
                 <i className="fa fa-envelope" aria-hidden="true"></i>
