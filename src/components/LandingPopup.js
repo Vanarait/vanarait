@@ -6,6 +6,7 @@ const StyledModal = styled(Modal)`
   .modal-title {
     color: #11bdf6;
     text-align: center;
+    font-size: 1.5rem;
   }
 `;
 
