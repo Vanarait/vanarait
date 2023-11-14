@@ -6,6 +6,7 @@ import Logo from "../Assests/Images/logo.png";
 import isMobile from "./Common/MobileView";
 
 const StyledNav = styled(Navbar)`
+  transition: max-height 0.5s ease-in-out;
   margin-top: ${isMobile() ? "64px" : "64px"};
   .primaryNav {
     .nav-item {
@@ -77,7 +78,7 @@ const Navigation = () => {
     >
       <Container>
         <Navbar.Brand
-          className={scrolling && !isMobile() ? "d-none" : "navbar-brand"}
+          className={`navbar-brand ${scrolling && !isMobile() ? "d-none" : ""}`}
         >
           <Link to="/">
             <Image
