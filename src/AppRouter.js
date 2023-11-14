@@ -17,9 +17,10 @@ import LoginForm from "./components/LoginForm";
 import ForgotPasswordForm from "./components/ForgotPasswordForm";
 import RegistrationForm from "./components/RegistrationForm";
 import CourseOfferings from "./pages/CourseOfferings";
-import LoadingPopup from "../src/components/LoadingPopup";
 import isMobile from "./components/Common/MobileView";
 import WhatsAppChatbot from "./components/WhatsAppChatbot";
+import ScrollToTopButton from "./components/ScrollToTopButton";
+import LandingPopup from "./components/LandingPopup";
 
 const MainContainer = styled.div`
   margin-top: ${isMobile() ? "154px" : "165px"};
@@ -28,7 +29,7 @@ const MainContainer = styled.div`
 const AppRouter = () => {
   return (
     <Router>
-      <LoadingPopup />
+      <LandingPopup />
       <Header />
       <MainContainer>
         <Routes>
@@ -64,6 +65,7 @@ const AppRouter = () => {
         </Routes>
       </MainContainer>
       <WhatsAppChatbot />
+      <ScrollToTopButton />
       <Footer />
     </Router>
   );
