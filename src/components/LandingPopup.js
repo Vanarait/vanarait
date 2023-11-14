@@ -77,7 +77,7 @@ const LandingPopup = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                www.Vanarait.com
+                www.vanarait.com
               </a>
             </ListGroup.Item>
           </StledGroup>
