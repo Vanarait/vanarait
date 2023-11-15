@@ -27,7 +27,7 @@ const LandingPopup = () => {
     // Show the modal when the window has finished loading
     window.onload = () => {
       if (isMounted) {
-        setShowModal(true);
+        setShowModal(false);
       }
     };
 

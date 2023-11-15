@@ -24,6 +24,8 @@ import LandingPopup from "./components/LandingPopup";
 
 const MainContainer = styled.div`
   background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
   margin-top: ${isMobile() ? "133px" : "165px"};
 `;
 
