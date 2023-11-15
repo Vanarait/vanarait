@@ -1,6 +1,6 @@
 /* StudentFeedback.css */
-.sf{
-  background-color: aqua;
+.sf {
+  background-color: lavender;
 }
 
 .feedback-title {
@@ -19,7 +19,7 @@
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin: 15px auto;
- 
+
 }
 
 .user-info {
@@ -29,7 +29,8 @@
 }
 
 .user-icon {
-  color: #007bff; /* Change the icon color */
+  color: #007bff;
+  /* Change the icon color */
   margin-right: 10px;
 }
 
@@ -48,7 +49,7 @@
 }
 
 .student-feedback {
-  padding:0px 15px;
+  padding: 15px;
 }
 
 .rating-label {
@@ -56,11 +57,13 @@
   display: block;
   margin-top: 10px;
 }
-.student-rating{
-text-align:right;
-margin-right: 15px;
-margin-bottom: 15px;
+
+.student-rating {
+  text-align: right;
+  margin-right: 15px;
+  margin-bottom: 15px;
 }
-.starIcons{
+
+.starIcons {
   color: rgb(132, 112, 2);
 }

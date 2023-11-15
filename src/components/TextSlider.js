@@ -41,7 +41,7 @@ const TextSlider = () => {
     <Carousel>
       {trainingData.map((training, index) => (
         <Carousel.Item key={index}>
-          <div className="slide-content">
+          <div className="slide-content bg-white">
             <TrainingCourse {...training} />
           </div>
         </Carousel.Item>

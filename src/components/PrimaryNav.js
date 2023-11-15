@@ -24,6 +24,7 @@ const StyledButton = styled(Button)`
 
 const StyledNav = styled(Navbar)`
   background-color: #1596c0;
+  padding: ${isMobile() ? "2px" : ""};
   .primaryNav {
     span {
       margin-right: 8px;
@@ -70,7 +71,7 @@ const PrimaryNav = () => {
           className="d-flex flex-row justify-content-between align-items-center"
         >
           <SocialIcons />
-          <StyledButton variant="primary">
+          <StyledButton variant="primary" size={`${isMobile() ? "sm" : ""}`}>
             <Link to="/LoginForm">
               <i className="fa fa-sign-in" aria-hidden="true"></i>
               Sign in

@@ -7,7 +7,7 @@ import isMobile from "./Common/MobileView";
 
 const StyledNav = styled(Navbar)`
   transition: max-height 0.5s ease-in-out;
-  margin-top: ${isMobile() ? "64px" : "64px"};
+  margin-top: ${isMobile() ? "45px" : "64px"};
   .primaryNav {
     .nav-item {
       border-bottom: ${isMobile() && "1px solid #6e6e6e"};
@@ -20,6 +20,18 @@ const StyledNav = styled(Navbar)`
     a {
       color: #fff;
     }
+  }
+  .navbar-brand {
+    max-height: 100px;
+    opacity: 1;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+
+  .navbar-brand.d-none {
+    max-height: 0;
+    opacity: 0;
+    pointer-events: none;
+    overflow: hidden;
   }
 `;
 

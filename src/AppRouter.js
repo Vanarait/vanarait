@@ -23,7 +23,8 @@ import ScrollToTopButton from "./components/ScrollToTopButton";
 import LandingPopup from "./components/LandingPopup";
 
 const MainContainer = styled.div`
-  margin-top: ${isMobile() ? "154px" : "165px"};
+  background: #f6f6f6;
+  margin-top: ${isMobile() ? "133px" : "165px"};
 `;
 
 const AppRouter = () => {

@@ -1,81 +1,92 @@
-.careerSection{
-  background-color: #3498db;
+.careerSection {
+  background-color: lavender;
 }
+
 .shape-container {
-    background-color: #3498db; /* Background color for the shape */
+  background-color: #3498db;
+  /* Background color for the shape */
   /*  width: 200px;*/
-    height: 100px;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-    border-radius:25px 0 25px 0px;
+  height: 100px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  border-radius: 25px 0 25px 0px;
 }
-.shape-text{
-	padding:25px 0 0  20px;
+
+.shape-text {
+  padding: 25px 0 0 20px;
 }
-.shape-text1{
-    text-align:center;
+
+.shape-text1 {
+  text-align: center;
 }
-.trainDetails{
-    padding: 15px 15px 50px 15px;
+
+.trainDetails {
+  padding: 15px 15px 50px 15px;
 }
+
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
-    text-align: center;
-    font-family: arial;
-  }
-  
-  .price {
-    color: grey;
-    font-size: 22px;
-  }
-  
-  .card button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-  }
-  
-  .card button:hover {
-    opacity: 0.7;
-  }
- 
-.row.course-fee{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.row.course-fee {
   background-color: rgb(168, 174, 181);
   padding: 50px 15px;
 }
- 
-.clients{
+
+.clients {
   background-color: #000407c7;
 }
-.ourClients{
+
+.ourClients {
   padding: 15px;
   color: #ede7ef;
 }
+
 @keyframes fadeInUp {
   0% {
     opacity: 0;
     transform: translateY(20px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
-.click{
+
+.click {
   color: red;
   text-decoration: none;
   font-weight: bolder;
 }
+
 @media only screen and (max-width:1024px) {
-  .carousel-item{
+  .carousel-item {
     min-height: 333PX;
   }
- 
+
 }
