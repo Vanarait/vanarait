@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Modal, Button, ListGroup } from "react-bootstrap";
+import { Modal, ListGroup } from "react-bootstrap";
 import styled from "styled-components";
 
 const StyledModal = styled(Modal)`
