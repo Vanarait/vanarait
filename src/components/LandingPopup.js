@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Modal, ListGroup } from "react-bootstrap";
+import { Modal, Button, ListGroup } from "react-bootstrap";
 import styled from "styled-components";
 
 const StyledModal = styled(Modal)`
@@ -27,7 +27,7 @@ const LandingPopup = () => {
     // Show the modal when the window has finished loading
     window.onload = () => {
       if (isMounted) {
-        setShowModal(false);
+        setShowModal(true);
       }
     };
 
