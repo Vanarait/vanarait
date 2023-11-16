@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
+import { Container, Table } from "react-bootstrap";
 import $ from "jquery";
 import "datatables.net";
 import "datatables.net-dt/css/jquery.dataTables.css";
-import "../css/OnlineTrainingDetails.css";
 
 const OnlineTrainingDetails = () => {
   useEffect(() => {
@@ -89,7 +89,6 @@ const OnlineTrainingDetails = () => {
       pageLength: 10,
       searching: true,
       info: true,
-      responsive: true, // Enable Responsive extension
     });
 
     // Make sure to destroy the DataTable instance when the component unmounts
@@ -99,10 +98,16 @@ const OnlineTrainingDetails = () => {
   }, []);
 
   return (
-    <div className="container OnlineTrainingDetails">
-      <h2>Training Details</h2>
-      <div className="responsive-table">
-        <table id="trainingTable" className="table">
+    <Container>
+      <div className="my-3">
+        <h2 className="mb-2">Training Details</h2>
+        <Table
+          id="trainingTable"
+          responsive="sm"
+          hover
+          size="sm"
+          className="py-3"
+        >
           <thead>
             <tr>
               <th>S.No</th>
@@ -114,9 +119,9 @@ const OnlineTrainingDetails = () => {
             </tr>
           </thead>
           <tbody></tbody>
-        </table>
+        </Table>
       </div>
-    </div>
+    </Container>
   );
 };
 

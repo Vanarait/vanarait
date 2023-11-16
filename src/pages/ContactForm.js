@@ -1,68 +1,85 @@
-// ContactForm.js
-import React, { Component } from 'react';
-import '../css/ContactForm.css';
+import React, { useState } from "react";
+import { Container, Form, Button } from "react-bootstrap";
+import styled from "styled-components";
+import isMobile from "../components/Common/MobileView";
 
-class ContactForm extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: '',
-      email: '',
-      message: '',
-    };
+const StyledDiv = styled.div`
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: ${isMobile() ? "" : "42%"};
+  h5 {
+    background: #11bdf6;
   }
+`;
 
-  handleInputChange = (e) => {
-    this.setState({ [e.target.name]: e.target.value });
+const ContactForm = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleInputChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
   };
 
-  handleSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission here
-    console.log('Form submitted with data:', this.state);
+    console.log("Form submitted with data:", formData);
   };
 
-  render() {
-    return (
-      <div className="contact-form">
-        <h2>Contact Us</h2>
-        <form onSubmit={this.handleSubmit}>
-          <div>
-            <label>Name:</label>
-            <input
-              type="text"
-              name="name"
-              value={this.state.name}
-              onChange={this.handleInputChange}
-              required
-            />
-          </div>
-          <div>
-            <label>Email:</label>
-            <input
-              type="email"
-              name="email"
-              value={this.state.email}
-              onChange={this.handleInputChange}
-              required
-            />
-          </div>
-          <div>
-            <label>Message:</label>
-            <textarea
-              name="message"
-              value={this.state.message}
-              onChange={this.handleInputChange}
-              required
-            />
-          </div>
-          <div>
-            <button type="submit">Submit</button>
-          </div>
-        </form>
+  return (
+    <Container className="contact-form">
+      <div className="d-flex align-items-center justify-content-center flex-column">
+        <StyledDiv className="bg-white my-5">
+          <h5 className="p-3 text-white">Contact Us</h5>
+          <Form onSubmit={handleSubmit} className="px-5 py-3">
+            <Form.Group controlId="formName" className="mb-3">
+              <Form.Label>Name:</Form.Label>
+              <Form.Control
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleInputChange}
+                required
+              />
+            </Form.Group>
+
+            <Form.Group controlId="formEmail" className="mb-3">
+              <Form.Label>Email:</Form.Label>
+              <Form.Control
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleInputChange}
+                required
+              />
+            </Form.Group>
+
+            <Form.Group controlId="formMessage" className="mb-3">
+              <Form.Label>Message:</Form.Label>
+              <Form.Control
+                as="textarea"
+                name="message"
+                value={formData.message}
+                onChange={handleInputChange}
+                required
+              />
+            </Form.Group>
+
+            <Button variant="primary" type="submit" className="w-100 mt-3">
+              Submit
+            </Button>
+          </Form>
+        </StyledDiv>
       </div>
-    );
-  }
-}
+    </Container>
+  );
+};
 
 export default ContactForm;

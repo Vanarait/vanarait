@@ -7,7 +7,7 @@ import isMobile from "./Common/MobileView";
 
 const StyledNav = styled(Navbar)`
   transition: max-height 0.5s ease-in-out;
-  margin-top: ${isMobile() ? "45px" : "64px"};
+  margin-top: ${isMobile() ? "36px" : "54px"};
   .primaryNav {
     .nav-item {
       border-bottom: ${isMobile() && "1px solid #6e6e6e"};

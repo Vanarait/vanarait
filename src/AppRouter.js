@@ -26,7 +26,7 @@ const MainContainer = styled.div`
   background: #f6f6f6;
   display: flex;
   flex-direction: column;
-  margin-top: ${isMobile() ? "133px" : "165px"};
+  margin-top: ${isMobile() ? "124px" : "154px"};
 `;
 
 const AppRouter = () => {
