@@ -23,18 +23,18 @@ const LandingPopup = () => {
   const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
-    let isMounted = true;
-    // Show the modal when the window has finished loading
-    window.onload = () => {
-      if (isMounted) {
-        setShowModal(true);
-      }
-    };
+    // Check if the modal has been shown before
+    const hasModalBeenShown = sessionStorage.getItem("hasModalBeenShown");
 
-    // Clean up the window.onload event handler on component unmount
+    // If it hasn't been shown, display the modal
+    if (!hasModalBeenShown) {
+      setShowModal(true);
+      sessionStorage.setItem("hasModalBeenShown", "true");
+    }
+
+    // Clean up the effect
     return () => {
-      isMounted = false;
-      window.onload = null;
+      // Additional cleanup logic if needed
     };
   }, []);
 
