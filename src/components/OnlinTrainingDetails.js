@@ -3,6 +3,7 @@ import { Container, Table } from "react-bootstrap";
 import $ from "jquery";
 import "datatables.net";
 import "datatables.net-dt/css/jquery.dataTables.css";
+import Title from "./Common/Title";
 
 const OnlineTrainingDetails = () => {
   useEffect(() => {
@@ -100,7 +101,9 @@ const OnlineTrainingDetails = () => {
   return (
     <Container>
       <div className="my-3">
-        <h2 className="mb-2">Training Details</h2>
+        <Title className="mb-2" level={2}>
+          Training Details
+        </Title>
         <Table
           id="trainingTable"
           responsive="sm"

@@ -1,10 +1,11 @@
 import React from "react";
+import Title from "../components/Common/Title";
 import "../css/JobSupportComponent.css";
 
 const JobSupportComponent = () => {
   return (
     <div className="job-support-container bg-white">
-      <h2>Job Support</h2>
+      <Title level={2}>Job Support</Title>
       <p>
         Job support refers to the assistance or support provided to individuals
         who are already employed in a job or project, particularly in the
@@ -13,7 +14,8 @@ const JobSupportComponent = () => {
         or need assistance in completing tasks and projects effectively. Here
         are some key aspects of job support:
       </p>
-      <h3>Types of Job Support:</h3>
+
+      <Title level={3}>Types of Job Support:</Title>
       <ul>
         <li>
           <strong>Technical Support:</strong> This involves providing assistance
@@ -41,7 +43,7 @@ const JobSupportComponent = () => {
           and standards may be part of job support.
         </li>
       </ul>
-      <h3>When Job Support is Needed:</h3>
+      <Title level={3}>When Job Support is Needed:</Title>
       <ul>
         <li>
           <strong>New Employees:</strong> Onboarding and training support for
@@ -65,7 +67,7 @@ const JobSupportComponent = () => {
           project-related challenges.
         </li>
       </ul>
-      <h3>Benefits of Job Support:</h3>
+      <Title level={3}>Benefits of Job Support:</Title>
       <ul>
         <li>
           <strong>Improved Productivity:</strong> Job support can enhance
@@ -88,7 +90,7 @@ const JobSupportComponent = () => {
           meet project deadlines and deliver high-quality work.
         </li>
       </ul>
-      <h3>Sources of Job Support:</h3>
+      <Title level={3}>Sources of Job Support:</Title>
       <ul>
         <li>
           <strong>Internal Resources:</strong> Colleagues, team leads, and
@@ -112,7 +114,7 @@ const JobSupportComponent = () => {
           services.
         </li>
       </ul>
-      <h3>Responsibilities of Job Support Providers:</h3>
+      <Title level={3}>Responsibilities of Job Support Providers:</Title>
       <ul>
         <li>Clearly understand the employee's needs and challenges.</li>
         <li>Provide guidance, assistance, and solutions in a timely manner.</li>

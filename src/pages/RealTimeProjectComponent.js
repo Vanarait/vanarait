@@ -1,10 +1,11 @@
 import React from "react";
+import Title from "../components/Common/Title";
 import "../css/RealTimeProjectComponent.css";
 
 const RealTimeProjectComponent = () => {
   return (
     <div className="real-time-project bg-white">
-      <h2>Real-Time Weather Dashboard</h2>
+      <Title level={2}>Real-Time Weather Dashboard</Title>
       <p>
         Build a real-time weather dashboard application that allows users to
         check the current weather conditions, forecasts, and related information
@@ -12,7 +13,7 @@ const RealTimeProjectComponent = () => {
         user-friendly UI for the frontend, and Azure cloud technologies to
         store, process, and serve data.
       </p>
-      <h3>Key Components:</h3>
+      <Title level={3}>Key Components:</Title>
       <ul>
         <li>
           <strong>Backend (Java):</strong>
@@ -102,14 +103,14 @@ const RealTimeProjectComponent = () => {
           </ul>
         </li>
       </ul>
-      <h3>Challenges:</h3>
+      <Title level={3}>Challenges:</Title>
       <ul>
         <li>Integrating real-time updates through WebSocket or SSE.</li>
         <li>Managing Azure resources effectively and securely.</li>
         <li>Handling the rate limits of the chosen weather API.</li>
         <li>Implementing responsive and visually appealing UI design.</li>
       </ul>
-      <h3>Learning Outcomes:</h3>
+      <Title level={3}>Learning Outcomes:</Title>
       <ul>
         <li>Proficiency in Java, web development, and Azure cloud services.</li>
         <li>Experience with integrating third-party APIs.</li>

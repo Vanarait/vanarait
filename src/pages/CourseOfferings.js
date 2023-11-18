@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Col, Container, Button } from "react-bootstrap";
 import "../css/CourseOfferings.css";
+import Title from "../components/Common/Title";
 
 const CourseOfferings = () => {
   // Sample data for course offerings
@@ -59,11 +60,13 @@ const CourseOfferings = () => {
   return (
     <Container>
       <Row className="mt-3 mb-3">
-        <h2 className="mb-2">Course Offerings</h2>
+        <Title className="mb-3" level={2}>
+          Course Offerings
+        </Title>
         {courses.map((course) => (
           <Col md={4} key={course.id} className="mb-4">
             <div className="course">
-              <h6>{course.title}</h6>
+              <Title level={6}>{course.title}</Title>
               <p className="price-info">
                 <span className="ct_cf">Duration:</span> {course.durationMonths}{" "}
                 months

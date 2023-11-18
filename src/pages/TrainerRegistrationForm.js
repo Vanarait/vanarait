@@ -2,15 +2,17 @@ import React, { useState } from "react";
 import { Container, Form, Button, Row, Col } from "react-bootstrap";
 import styled from "styled-components";
 import isMobile from "../components/Common/MobileView";
+import Title from "../components/Common/Title";
+
+const StyledTitle = styled(Title)`
+  background: #11bdf6;
+`;
 
 const StyledDiv = styled.div`
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: ${isMobile() ? "" : "42%"};
-  h5 {
-    background: #11bdf6;
-  }
 `;
 
 const TrainerRegistration = () => {
@@ -79,7 +81,9 @@ const TrainerRegistration = () => {
     <Container>
       <div className="d-flex align-items-center justify-content-center flex-column">
         <StyledDiv className="bg-white my-5">
-          <h5 className="p-3 text-white">Trainer Registration</h5>
+          <StyledTitle className="p-3 text-white" level={5}>
+            Trainer Registration
+          </StyledTitle>
           <Form onSubmit={handleSubmit} className="px-5 py-3">
             <Row>
               <Col md={12}>

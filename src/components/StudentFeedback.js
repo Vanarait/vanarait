@@ -1,7 +1,8 @@
 import React from "react";
 import StarRating from "./StarRating"; // Import the StarRating component
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons"; // Import the user icon
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+import Title from "./Common/Title";
 import "../css/StudentFeedback.css";
 
 function StudentFeedback() {
@@ -53,7 +54,7 @@ function StudentFeedback() {
 
   return (
     <div className="student-feedback container">
-      <h2 className="feedback-title">Recent Student Feedback and Ratings</h2>
+      <Title level={2}>Recent Student Feedback and Ratings</Title>
       <div className="feedback-list row">
         {feedbackData.map((feedback, index) => (
           <div key={index} className="col-md-4">

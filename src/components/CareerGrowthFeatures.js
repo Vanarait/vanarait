@@ -1,7 +1,15 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faUser, faQuestion, faCogs, faFilePdf, faCertificate } from '@fortawesome/free-solid-svg-icons';
-import '../css/CareerGrowthFeatures.css';
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHome,
+  faUser,
+  faQuestion,
+  faCogs,
+  faFilePdf,
+  faCertificate,
+} from "@fortawesome/free-solid-svg-icons";
+import "../css/CareerGrowthFeatures.css";
+import Title from "./Common/Title";
 
 function CareerGrowthFeatures() {
   const features = [
@@ -52,7 +60,7 @@ function CareerGrowthFeatures() {
 
   return (
     <div className="career-growth-features container">
-      <h2> Key Benefits</h2>
+      <Title level={2}> Key Benefits</Title>
       {rows.map((row, rowIndex) => (
         <div className="feature-row row" key={rowIndex}>
           {row.map((feature, featureIndex) => (
@@ -63,7 +71,7 @@ function CareerGrowthFeatures() {
                   size="2x" // Adjust the size as needed
                   style={{ color: feature.color }} // Apply the color
                 />
-                <h4>{feature.title}</h4>
+                <Title level={4}>{feature.title}</Title>
                 <p>{feature.description}</p>
               </div>
             </div>

@@ -1,9 +1,10 @@
-import React from 'react';
+import React from "react";
+import Title from "../components/Common/Title";
 
 const About = () => {
   return (
     <div>
-      <h1>About Page</h1>
+      <Title>About Page</Title>
       <p>Learn more about us on the About Page!</p>
     </div>
   );

@@ -4,12 +4,14 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import isMobile from "./Common/MobileView";
 import SocialIcons from "./SocialIcons";
+import Title from "./Common/Title";
+
+const StyledTitle = styled(Title)`
+  color: #11bdf6;
+  font-size: 1rem;
+`;
 
 const FooterNav = styled(Navbar)`
-  h5 {
-    color: #11bdf6;
-    font-size: 1rem;
-  }
   .navbar-nav {
     a {
       margin: 6px 0px;
@@ -49,7 +51,7 @@ const Footer = () => {
       <Container>
         <Row className="w-100 mt-3">
           <Col lg={3}>
-            <h5>QUICK LINKS</h5>
+            <StyledTitle level={5}>QUICK LINKS</StyledTitle>
             <Nav className="me-auto flex-column">
               <Link to="/">Home</Link>
               <Link to="/CourseOfferings">Courses Offerings</Link>
@@ -60,7 +62,9 @@ const Footer = () => {
             </Nav>
           </Col>
           <Col lg={3}>
-            <h5 className={isMobile() ? "mt-4" : ""}>QUICK SERVICES</h5>
+            <StyledTitle level={5} className={isMobile() ? "mt-4" : ""}>
+              QUICK SERVICES
+            </StyledTitle>
             <Nav className="me-auto flex-column">
               <Link to="/OnlineTrainingDetails">Online Training</Link>
               <Link to="/PersonalTrainingComponent">Personal Training</Link>
@@ -71,7 +75,9 @@ const Footer = () => {
             </Nav>
           </Col>
           <Col lg={3}>
-            <h5 className={isMobile() ? "mt-4" : ""}>TERMS AND CONDITIONS</h5>
+            <StyledTitle level={5} className={isMobile() ? "mt-4" : ""}>
+              TERMS AND CONDITIONS
+            </StyledTitle>
             <Nav className="me-auto flex-column">
               <Nav.Link className="mb-0 p-0">
                 Terms of use & Privacy Policy
@@ -79,7 +85,9 @@ const Footer = () => {
             </Nav>
           </Col>
           <Col lg={3}>
-            <h5 className={isMobile() ? "mt-4" : ""}>CONTACT US</h5>
+            <StyledTitle level={5} className={isMobile() ? "mt-4" : ""}>
+              CONTACT US
+            </StyledTitle>
             <Nav className="me-auto flex-column mb-4">
               <Nav.Link href="tel:+919392926261" className="mb-0 p-0">
                 <i className="fa fa-phone-square" aria-hidden="true"></i>
@@ -90,7 +98,9 @@ const Footer = () => {
                 hr@vanarait.com
               </Nav.Link>
             </Nav>
-            <h5 className="mb-2">FOLLOW US</h5>
+            <StyledTitle level={5} className="mb-2">
+              FOLLOW US
+            </StyledTitle>
             <SocialIcons />
           </Col>
         </Row>

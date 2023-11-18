@@ -1,9 +1,11 @@
 import React from "react";
+import Title from "./Common/Title";
 import "../css/PersonalTrainingComponent.css";
+
 const PersonalTrainingComponent = () => {
   return (
     <div className="training-container bg-white my-5">
-      <h2>Personal Technology Training</h2>
+      <Title level={2}>Personal Technology Training</Title>
       <p>
         As a personal technology trainer, it's essential to provide a valuable
         and effective learning experience for my students. Here are six
