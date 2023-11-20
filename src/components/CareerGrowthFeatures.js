@@ -1,4 +1,5 @@
 import React from "react";
+import { Card, Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHome,
@@ -8,16 +9,31 @@ import {
   faFilePdf,
   faCertificate,
 } from "@fortawesome/free-solid-svg-icons";
-import "../css/CareerGrowthFeatures.css";
+import styled from "styled-components";
+// import "../css/CareerGrowthFeatures.css";
 import Title from "./Common/Title";
 
-function CareerGrowthFeatures() {
+const StyledContainer = styled(Container)`
+  .card {
+    border-top-right-radius: 35px !important;
+    border-bottom-left-radius: 35px !important;
+    max-width: none;
+  }
+  h2 {
+    font-size: 1.7rem;
+  }
+  .card-title {
+    font-weight: bold;
+  }
+`;
+
+const CareerGrowthFeatures = () => {
   const features = [
     {
       title: "Learn from home",
       description: "Stay safe indoors.",
-      icon: faHome, // Use Font Awesome icons
-      color: "red", // Define the color
+      icon: faHome,
+      color: "red",
     },
     {
       title: "Beginner friendly",
@@ -49,7 +65,6 @@ function CareerGrowthFeatures() {
       icon: faCertificate,
       color: "pink",
     },
-    // Add more features with titles, descriptions, and colors
   ];
 
   const rows = [];
@@ -59,27 +74,32 @@ function CareerGrowthFeatures() {
   }
 
   return (
-    <div className="career-growth-features container">
-      <Title level={2}> Key Benefits</Title>
+    <StyledContainer className="my-4">
+      <Title level={2} className="mb-4">
+        Key Benefits
+      </Title>
       {rows.map((row, rowIndex) => (
-        <div className="feature-row row" key={rowIndex}>
+        <Row key={rowIndex}>
           {row.map((feature, featureIndex) => (
-            <div className="col-md-4" key={featureIndex}>
-              <div className="feature mb-4">
+            <Col md={4} key={featureIndex} className="mb-4">
+              <Card className="h-100 d-flex flex-column rounded-0">
                 <FontAwesomeIcon
                   icon={feature.icon}
-                  size="2x" // Adjust the size as needed
-                  style={{ color: feature.color }} // Apply the color
+                  size="2x"
+                  style={{ color: feature.color }}
+                  className="mt-3"
                 />
-                <Title level={4}>{feature.title}</Title>
-                <p>{feature.description}</p>
-              </div>
-            </div>
+                <Card.Body>
+                  <Card.Title>{feature.title}</Card.Title>
+                  <Card.Text>{feature.description}</Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
           ))}
-        </div>
+        </Row>
       ))}
-    </div>
+    </StyledContainer>
   );
-}
+};
 
 export default CareerGrowthFeatures;

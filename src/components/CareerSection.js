@@ -1,7 +1,47 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../css/CareerSection.css";
+import { Container, Row, Col, Card } from "react-bootstrap";
+import styled from "styled-components";
+import isMobile from "./Common/MobileView";
 import Title from "./Common/Title";
+
+const StyledContainer = styled(Container)`
+  .card {
+    border-radius: 20%;
+    a {
+      font-size: 0.9rem;
+    }
+  }
+  h2 {
+    font-size: 1.7rem;
+  }
+  .card-title {
+    color: #11bdf6;
+  }
+
+  .service-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 10px 21px 12px 42%;
+  }
+
+  .service-online {
+    background-color: #3498db;
+  }
+
+  .service-personal {
+    background-color: #e67e22;
+  }
+
+  .service-realtime {
+    background-color: #27ae60;
+  }
+
+  .service-support {
+    background-color: #9b59b6;
+  }
+`;
 
 const services = [
   {
@@ -30,30 +70,28 @@ const services = [
   },
 ];
 
-function CareerSection() {
+const CareerSection = () => {
   return (
-    <div className="career-section container">
-      <Title className="section-title" level={2}>
+    <StyledContainer className="mb-5 mt-4">
+      <Title level={2} className="mb-4">
         Our Range of Services
       </Title>
-      <div className="service-container row">
+      <Row>
         {services.map((service, index) => (
-          <div className="col-md-3" key={index}>
-            <div className="service">
+          <Col md={3} key={index}>
+            <Card className={isMobile() ? "mb-4" : "h-100 d-flex flex-column"}>
               <div className={`service-icon ${service.icon}`}></div>
-              <Title level={3}>{service.title}</Title>
-              <p>{service.description}</p>
-              <p>
-                <Link to={service.link} className="learn-more">
-                  More Details
-                </Link>
-              </p>
-            </div>
-          </div>
+              <Card.Body className="flex-fill service px-3">
+                <Card.Title>{service.title}</Card.Title>
+                <Card.Text>{service.description}</Card.Text>
+                <Link to={service.link}>More Details</Link>
+              </Card.Body>
+            </Card>
+          </Col>
         ))}
-      </div>
-    </div>
+      </Row>
+    </StyledContainer>
   );
-}
+};
 
 export default CareerSection;
