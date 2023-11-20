@@ -2,6 +2,11 @@
   background-color: lavender;
 }
 
+.clients-title {
+  color: #fff;
+  font-size: 1.7rem;
+}
+
 .shape-container {
   background-color: #3498db;
   /* Background color for the shape */

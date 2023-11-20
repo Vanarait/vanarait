@@ -38,7 +38,7 @@ const Home = () => {
         <div className="CareerGrowthFeatures">
           <CareerGrowthFeatures />
         </div>
-        <div className="row sf">
+        <div className="row careerSection">
           <div className="container">
             <StudentFeedback />
           </div>
@@ -46,9 +46,9 @@ const Home = () => {
         <div className="row clients">
           <div className="container">
             <div className="container">
-              <div className="clients-title">
-                <Title level={2}>Our clients</Title>
-              </div>
+              <Title level={2} className="clients-title mt-3 mb-4">
+                Our clients
+              </Title>
               <ImageCarousel images={images} autoScrollInterval={5000} />
             </div>
           </div>

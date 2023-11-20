@@ -1,19 +1,58 @@
 import React from "react";
-import StarRating from "./StarRating"; // Import the StarRating component
+import { Card, Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import styled from "styled-components";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
+import StarRating from "./StarRating";
 import Title from "./Common/Title";
-import "../css/StudentFeedback.css";
 
-function StudentFeedback() {
-  // Sample feedback and ratings data
+const StyledContainer = styled(Container)`
+  background-color: #e6e6fa;
+  .card {
+    text-align: left;
+    max-width: none;
+    .user-icon {
+      color: #007bff;
+      margin-right: 10px;
+    }
+    h6 {
+      font-weight: bold;
+    }
+    .course-name {
+      font-style: italic;
+      font-size: 0.9rem;
+      color: #11bdf6;
+      font-weight: bold;
+    }
+
+    .student-course {
+      font-style: italic;
+    }
+
+    .student-rating {
+      text-align: right;
+    }
+
+    .starIcons {
+      color: rgb(132, 112, 2);
+    }
+  }
+  h2 {
+    font-size: 1.7rem;
+  }
+  .card-title {
+    font-weight: bold;
+  }
+`;
+
+const StudentFeedback = () => {
   const feedbackData = [
     {
       name: "Sidramesh mudma",
       course: "UI Full Stack",
       feedback:
         "Vanara IT helped me gain valuable skills and kickstart my career!",
-      rating: 5, // Rating out of 5
+      rating: 5,
     },
     {
       name: "Manikanta Shakarulu",
@@ -53,33 +92,39 @@ function StudentFeedback() {
   ];
 
   return (
-    <div className="student-feedback container">
-      <Title level={2}>Recent Student Feedback and Ratings</Title>
-      <div className="feedback-list row">
+    <StyledContainer className="my-4">
+      <Title level={2} className="mb-4">
+        Recent Student Feedback and Ratings
+      </Title>
+      <Row>
         {feedbackData.map((feedback, index) => (
-          <div key={index} className="col-md-4">
-            <div className="feedback-item">
-              <div className="user-info">
-                <FontAwesomeIcon
-                  icon={faUser}
-                  className="user-icon"
-                  size="2x"
-                />
-                <div className="info-text">
-                  <p className="student-name">{feedback.name}</p>
-                  <p className="student-course">{feedback.course}</p>
+          <Col key={index} md={4} className="mb-4">
+            <Card className="h-100 d-flex flex-column rounded-0">
+              <Card.Body>
+                <div className="d-flex align-items-center">
+                  <FontAwesomeIcon
+                    icon={faUser}
+                    className="user-icon"
+                    size="2x"
+                  />
+                  <div>
+                    <Title level={6} className="mb-0">
+                      {feedback.name}
+                    </Title>
+                    <p className="mb-0 course-name">{feedback.course}</p>
+                  </div>
                 </div>
-              </div>
-              <p className="student-feedback">{feedback.feedback}</p>
-              <div className="student-rating">
-                <StarRating rating={feedback.rating} />
-              </div>
-            </div>
-          </div>
+                <p className="my-4">{feedback.feedback}</p>
+                <div className="student-rating">
+                  <StarRating rating={feedback.rating} />
+                </div>
+              </Card.Body>
+            </Card>
+          </Col>
         ))}
-      </div>
-    </div>
+      </Row>
+    </StyledContainer>
   );
-}
+};
 
 export default StudentFeedback;

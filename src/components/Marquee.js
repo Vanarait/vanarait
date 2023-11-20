@@ -1,19 +1,19 @@
-import React, { useEffect, useState } from 'react';
-import '../css/Marquee.css';
+import React, { useEffect, useState } from "react";
+import "../css/Marquee.css";
 
 const images = [
-  'clients/acc.png',
-  'clients/cog.png',
-  'clients/dbs.png',
-  'clients/ibm.png',
-  'clients/hcl.png',
-  'clients/lt.png',
-  'clients/ss.png',
-  'clients/techm.png',
-  'clients/ss.png',
-  'clients/wipro.png',
-  'clients/deloite.png',
-  'clients/techsystem.jpg'
+  "clients/acc.png",
+  "clients/cog.png",
+  "clients/dbs.png",
+  "clients/ibm.png",
+  "clients/hcl.png",
+  "clients/lt.png",
+  "clients/ss.png",
+  "clients/techm.png",
+  "clients/ss.png",
+  "clients/wipro.png",
+  "clients/deloite.png",
+  "clients/techsystem.jpg",
   // Add more image URLs here
 ];
 
@@ -36,7 +36,7 @@ const Marquee = () => {
           setIsLoading(false);
         })
         .catch((error) => {
-          console.error('Failed to load images:', error);
+          console.error("Failed to load images:", error);
           setIsLoading(false);
         });
     };
@@ -45,10 +45,15 @@ const Marquee = () => {
   }, []);
 
   return (
-    <div className="marquee-container col-md-12">
+    <div className="marquee-container mb-5">
       {!isLoading &&
         images.map((image, index) => (
-          <img key={index} src={image} alt={`Client Logo ${index}`} className="marquee-image" />
+          <img
+            key={index}
+            src={image}
+            alt={`Client Logo ${index}`}
+            className="marquee-image"
+          />
         ))}
     </div>
   );

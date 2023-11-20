@@ -72,7 +72,7 @@ const services = [
 
 const CareerSection = () => {
   return (
-    <StyledContainer className="mb-5 mt-4">
+    <StyledContainer className={isMobile() ? "mb-0" : "mb-5 mt-4"}>
       <Title level={2} className="mb-4">
         Our Range of Services
       </Title>
