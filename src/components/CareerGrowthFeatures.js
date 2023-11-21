@@ -10,7 +10,6 @@ import {
   faCertificate,
 } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
-// import "../css/CareerGrowthFeatures.css";
 import Title from "./Common/Title";
 
 const StyledContainer = styled(Container)`
@@ -24,7 +23,7 @@ const StyledContainer = styled(Container)`
   }
   .card-title {
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.25rem;
   }
 `;
 

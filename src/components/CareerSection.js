@@ -17,6 +17,7 @@ const StyledContainer = styled(Container)`
   }
   .card-title {
     color: #11bdf6;
+    font-size: 1.25rem;
   }
 
   .service-icon {
@@ -82,7 +83,7 @@ const CareerSection = () => {
             <Card className={isMobile() ? "mb-4" : "h-100 d-flex flex-column"}>
               <div className={`service-icon ${service.icon}`}></div>
               <Card.Body className="flex-fill service px-3">
-                <Card.Title>{service.title}</Card.Title>
+                <Card.Title as="h2">{service.title}</Card.Title>
                 <Card.Text>{service.description}</Card.Text>
                 <Link to={service.link}>More Details</Link>
               </Card.Body>

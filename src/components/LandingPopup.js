@@ -7,11 +7,18 @@ const StyledModal = styled(Modal)`
     color: #11bdf6;
     text-align: center;
   }
+  .modal-content {
+    border: 4px solid orange;
+  }
 `;
 
 const StledGroup = styled(ListGroup)`
   .list-group-item:first-child {
-    background-color: #11bdf6;
+    background: linear-gradient(
+      121.7deg,
+      rgb(41, 116, 250) 22.9%,
+      rgb(67, 212, 255) 69%
+    );
     color: #fff;
     font-size: 1.3rem;
     font-weight: 600;

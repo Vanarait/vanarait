@@ -21,6 +21,39 @@ const StyledNav = styled(Navbar)`
       color: #fff;
     }
   }
+  .dropdown-toggle {
+    transition: background-color 1s ease;
+  }
+
+  .fade-in {
+    animation: fadeIn 1s ease;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .dropdown-menu {
+    padding: 0px;
+  }
+  .show .fade-in {
+    display: block;
+    border-bottom: 1px solid;
+    padding: 8px 15px;
+    &:hover {
+      background: #6c757d;
+    }
+    &:last-child {
+      border-bottom: 0px;
+    }
+  }
+
   .navbar-brand {
     max-height: 100px;
     opacity: 1;
@@ -58,10 +91,11 @@ const menuItems = [
 
 const Navigation = () => {
   const [scrolling, setScrolling] = useState(false);
-  const [showMenu, setShowMenu] = useState(false);
+  const [showMenuBar, setShowMenuBar] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false);
 
   const toggleMenu = () => {
-    setShowMenu(!showMenu);
+    setShowMenuBar(!showMenuBar);
   };
 
   useEffect(() => {
@@ -78,6 +112,12 @@ const Navigation = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const handleToggle = () => {
+    if (isMobile()) {
+      setShowDropdown(!showDropdown);
+    }
+  };
 
   return (
     <StyledNav
@@ -101,7 +141,7 @@ const Navigation = () => {
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle onClick={toggleMenu}>
-          {showMenu ? (
+          {showMenuBar ? (
             <i className="fa fa-times fa-lg" aria-hidden="true"></i>
           ) : (
             <i className="fa fa-bars fa-lg" aria-hidden="true"></i>
@@ -114,9 +154,20 @@ const Navigation = () => {
           <Nav className={`${!scrolling && "me-auto"} primaryNav`}>
             {menuItems.map((menuItem, index) =>
               menuItem.submenu ? (
-                <NavDropdown title={menuItem.label} key={index}>
+                <NavDropdown
+                  title={menuItem.label}
+                  key={index}
+                  show={showDropdown}
+                  onMouseEnter={() => setShowDropdown(true)}
+                  onMouseLeave={() => setShowDropdown(false)}
+                  onClick={handleToggle}
+                >
                   {menuItem.submenu.map((subItem, subIndex) => (
-                    <NavDropdown.Item key={subIndex} href={subItem.link}>
+                    <NavDropdown.Item
+                      key={subIndex}
+                      href={subItem.link}
+                      className={`fade-in ${showDropdown ? "show" : ""}`}
+                    >
                       {subItem.label}
                     </NavDropdown.Item>
                   ))}
