@@ -34,36 +34,42 @@ const CareerGrowthFeatures = () => {
       description: "Stay safe indoors.",
       icon: faHome,
       color: "red",
+      bgColor: "#ff00002e",
     },
     {
       title: "Beginner friendly",
       description: "No prior knowledge required",
       icon: faUser,
       color: "blue",
+      bgColor: "lightblue",
     },
     {
       title: "Doubt clearing",
       description: "Through Q&A forum",
       icon: faQuestion,
       color: "green",
+      bgColor: "lightgreen",
     },
     {
       title: "Build a project",
       description: "For hands-on practice.",
       icon: faCogs,
       color: "orange",
+      bgColor: "#fda70959",
     },
     {
       title: "Downloadable content",
       description: "PDF Documents",
       icon: faFilePdf,
       color: "purple",
+      bgColor: "#db8fdb75",
     },
     {
       title: "Completion Certificate",
       description: "from Vanara IT",
       icon: faCertificate,
       color: "pink",
+      bgColor: "#f38c9e",
     },
   ];
 
@@ -82,7 +88,10 @@ const CareerGrowthFeatures = () => {
         <Row key={rowIndex}>
           {row.map((feature, featureIndex) => (
             <Col md={4} key={featureIndex} className="mb-4">
-              <Card className="h-100 d-flex flex-column rounded-0">
+              <Card
+                className="h-100 d-flex flex-column rounded-0"
+                style={{ background: feature.bgColor }}
+              >
                 <FontAwesomeIcon
                   icon={feature.icon}
                   size="2x"
