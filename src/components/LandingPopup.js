@@ -10,6 +10,21 @@ const StyledModal = styled(Modal)`
   .modal-content {
     border: 4px solid orange;
   }
+
+  .modal-body {
+    animation: fadeInAndBold 1s ease-in-out;
+  }
+
+  @keyframes fadeInAndBold {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 `;
 
 const StledGroup = styled(ListGroup)`

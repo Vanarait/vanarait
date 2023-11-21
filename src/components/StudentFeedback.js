@@ -91,6 +91,11 @@ const StudentFeedback = () => {
     },
   ];
 
+  const handleRating = (rating) => {
+    console.log(`User rated with ${rating} stars`);
+    // Add your logic for handling the rating here
+  };
+
   return (
     <StyledContainer className="my-4">
       <Title level={2} className="mb-4">
@@ -116,7 +121,11 @@ const StudentFeedback = () => {
                 </div>
                 <p className="my-4">{feedback.feedback}</p>
                 <div className="student-rating">
-                  <StarRating rating={feedback.rating} />
+                  <StarRating
+                    totalStars={5}
+                    initialRating={feedback.rating}
+                    onRate={handleRating}
+                  />
                 </div>
               </Card.Body>
             </Card>
