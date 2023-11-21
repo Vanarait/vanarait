@@ -24,6 +24,7 @@ const StyledContainer = styled(Container)`
   }
   .card-title {
     font-weight: bold;
+    font-size: 1.3rem;
   }
 `;
 
@@ -99,7 +100,7 @@ const CareerGrowthFeatures = () => {
                   className="mt-3"
                 />
                 <Card.Body>
-                  <Card.Title>{feature.title}</Card.Title>
+                  <Card.Title as="h2">{feature.title}</Card.Title>
                   <Card.Text>{feature.description}</Card.Text>
                 </Card.Body>
               </Card>
