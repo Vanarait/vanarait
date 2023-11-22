@@ -81,7 +81,7 @@ const CareerGrowthFeatures = () => {
 
   return (
     <StyledContainer className="my-4">
-      <Title level={2} className="mb-4">
+      <Title level={1} className="mb-4" style={{ fontSize: "1.7rem" }}>
         Key Benefits
       </Title>
       {rows.map((row, rowIndex) => (

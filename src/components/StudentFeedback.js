@@ -15,9 +15,7 @@ const StyledContainer = styled(Container)`
       color: #007bff;
       margin-right: 10px;
     }
-    h6 {
-      font-weight: bold;
-    }
+
     .course-name {
       font-style: italic;
       font-size: 0.9rem;
@@ -36,9 +34,6 @@ const StyledContainer = styled(Container)`
     .starIcons {
       color: rgb(132, 112, 2);
     }
-  }
-  h2 {
-    font-size: 1.7rem;
   }
   .card-title {
     font-weight: bold;
@@ -98,7 +93,7 @@ const StudentFeedback = () => {
 
   return (
     <StyledContainer className="my-4">
-      <Title level={2} className="mb-4">
+      <Title level={1} className="mb-4" style={{ fontSize: "1.7rem" }}>
         Recent Student Feedback and Ratings
       </Title>
       <Row>
@@ -113,7 +108,11 @@ const StudentFeedback = () => {
                     size="2x"
                   />
                   <div>
-                    <Title level={6} className="mb-0">
+                    <Title
+                      level={2}
+                      className="mb-0"
+                      style={{ fontSize: "1rem", fontWeight: "bold" }}
+                    >
                       {feedback.name}
                     </Title>
                     <p className="mb-0 course-name">{feedback.course}</p>
