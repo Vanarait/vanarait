@@ -101,7 +101,7 @@ const OnlineTrainingDetails = () => {
   return (
     <Container>
       <div className="my-3">
-        <Title className="mb-2" level={2}>
+        <Title className="mb-2" level={1} style={{ fontSize: "1.5rem" }}>
           Training Details
         </Title>
         <Table

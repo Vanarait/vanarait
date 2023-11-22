@@ -60,7 +60,7 @@ const CourseOfferings = () => {
   return (
     <Container>
       <Row className="mt-3 mb-3">
-        <Title className="mb-3" level={2}>
+        <Title className="mb-3" level={1} style={{ fontSize: "1.5rem" }}>
           Course Offerings
         </Title>
         {courses.map((course) => (

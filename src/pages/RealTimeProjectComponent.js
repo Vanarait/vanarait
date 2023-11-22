@@ -5,7 +5,9 @@ import "../css/RealTimeProjectComponent.css";
 const RealTimeProjectComponent = () => {
   return (
     <div className="real-time-project bg-white">
-      <Title level={2}>Real-Time Weather Dashboard</Title>
+      <Title level={1} style={{ fontSize: "1.5rem" }}>
+        Real-Time Weather Dashboard
+      </Title>
       <p>
         Build a real-time weather dashboard application that allows users to
         check the current weather conditions, forecasts, and related information

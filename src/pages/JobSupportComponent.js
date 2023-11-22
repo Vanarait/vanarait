@@ -5,7 +5,9 @@ import "../css/JobSupportComponent.css";
 const JobSupportComponent = () => {
   return (
     <div className="job-support-container bg-white">
-      <Title level={2}>Job Support</Title>
+      <Title level={1} style={{ fontSize: "1.5rem" }}>
+        Job Support
+      </Title>
       <p>
         Job support refers to the assistance or support provided to individuals
         who are already employed in a job or project, particularly in the
