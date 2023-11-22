@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import $ from "jquery"; // Import jQuery
+import $ from "jquery";
 import "datatables.net";
 import "datatables.net-dt/css/jquery.dataTables.css"; // Import DataTables CSS
 import "../css/OnlineTrainingDetails.css";

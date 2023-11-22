@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { motion } from "framer-motion";
 import styled from "styled-components";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -34,39 +35,49 @@ const AppRouter = () => {
     <Router>
       <LandingPopup />
       <Header />
-      <MainContainer>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/CourseOfferings" element={<CourseOfferings />} />
-          <Route path="/about" element={<About />} />
-          <Route
-            path="/OnlineTrainingDetails"
-            element={<OnlineTrainingDetails />}
-          />
-          <Route path="/RegistrationForm" element={<RegistrationForm />} />
-          <Route
-            path="/PersonalTrainingComponent"
-            element={<PersonalTrainingComponent />}
-          />
-          <Route
-            path="/RealTimeProjectComponent"
-            element={<RealTimeProjectComponent />}
-          />
-          <Route
-            path="/TrainerRegistrationForm"
-            element={<TrainerRegistrationForm />}
-          />
-          <Route
-            path="/JobSupportComponent"
-            element={<JobSupportComponent />}
-          />
-          <Route path="/LoginForm" element={<LoginForm />} />
-          <Route path="/ContactForm" element={<ContactForm />} />
-          <Route path="/ForgotPasswordForm" element={<ForgotPasswordForm />} />
-          <Route path="/courses" element={<Courses />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </MainContainer>
+      <motion.div
+        initial={{ opacity: 0, x: -80 }}
+        animate={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: 80 }}
+        transition={{ ease: "linear", duration: 2, x: { duration: 0.7 } }}
+      >
+        <MainContainer>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/CourseOfferings" element={<CourseOfferings />} />
+            <Route path="/about" element={<About />} />
+            <Route
+              path="/OnlineTrainingDetails"
+              element={<OnlineTrainingDetails />}
+            />
+            <Route path="/RegistrationForm" element={<RegistrationForm />} />
+            <Route
+              path="/PersonalTrainingComponent"
+              element={<PersonalTrainingComponent />}
+            />
+            <Route
+              path="/RealTimeProjectComponent"
+              element={<RealTimeProjectComponent />}
+            />
+            <Route
+              path="/TrainerRegistrationForm"
+              element={<TrainerRegistrationForm />}
+            />
+            <Route
+              path="/JobSupportComponent"
+              element={<JobSupportComponent />}
+            />
+            <Route path="/LoginForm" element={<LoginForm />} />
+            <Route path="/ContactForm" element={<ContactForm />} />
+            <Route
+              path="/ForgotPasswordForm"
+              element={<ForgotPasswordForm />}
+            />
+            <Route path="/courses" element={<Courses />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </MainContainer>
+      </motion.div>
       <WhatsAppChatbot />
       <ScrollToTopButton />
       <Footer />
