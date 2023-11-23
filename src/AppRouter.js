@@ -39,7 +39,7 @@ const AppRouter = () => {
         initial={{ opacity: 0, x: -80 }}
         animate={{ opacity: 1, x: 0 }}
         exit={{ opacity: 0, x: 80 }}
-        transition={{ ease: "linear", duration: 2, x: { duration: 0.7 } }}
+        transition={{ duration: 0.8 }}
       >
         <MainContainer>
           <Routes>
