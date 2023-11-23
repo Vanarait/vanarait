@@ -63,8 +63,7 @@ const Footer = () => {
               <Link to="/CourseOfferings">Courses Offerings</Link>
               <Link to="/OnlineTrainingDetails"> New Batches</Link>
               <Link to="/TrainerRegistrationForm"> Trainer Registration</Link>
-              <Link to="/ContactForm"> Get In Touch</Link>
-              <Link to="/ContactForm"> Get In Touch</Link>
+              <Link to="/Contact"> Get In Touch</Link>
             </Nav>
           </Col>
           <Col lg={3}>
