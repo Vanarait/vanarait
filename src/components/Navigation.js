@@ -85,7 +85,7 @@ const menuItems = [
   { label: "Courses Offering", link: "/CourseOfferings" },
   { label: "New Batch Schedules", link: "/OnlineTrainingDetails" },
   { label: "Trainer Registration", link: "/TrainerRegistrationForm" },
-  { label: "Get In Touch", link: "/ContactForm" },
+  { label: "Get In Touch", link: "/Contact" },
   // Add more menu items as needed
 ];
 

@@ -8,7 +8,7 @@ const StyledModal = styled(Modal)`
     text-align: center;
   }
   .modal-content {
-    border: 4px solid orange;
+    border: 3px solid orange;
   }
 
   .modal-body {

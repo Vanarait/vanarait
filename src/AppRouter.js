@@ -13,7 +13,6 @@ import PersonalTrainingComponent from "./components/PersonalTrainingComponent";
 import RealTimeProjectComponent from "./pages/RealTimeProjectComponent";
 import JobSupportComponent from "./pages/JobSupportComponent";
 import TrainerRegistrationForm from "./pages/TrainerRegistrationForm";
-import ContactForm from "./pages/ContactForm";
 import LoginForm from "./components/LoginForm";
 import ForgotPasswordForm from "./components/ForgotPasswordForm";
 import RegistrationForm from "./components/RegistrationForm";
@@ -68,7 +67,6 @@ const AppRouter = () => {
               element={<JobSupportComponent />}
             />
             <Route path="/LoginForm" element={<LoginForm />} />
-            <Route path="/ContactForm" element={<ContactForm />} />
             <Route
               path="/ForgotPasswordForm"
               element={<ForgotPasswordForm />}
