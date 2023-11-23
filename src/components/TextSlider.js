@@ -7,7 +7,7 @@ const trainingData = [
   {
     title: "UI Full Stack With Real Time Project in Cloud",
     trainer: "Mr. Ramesh",
-    date: "21th Jan 2024 @ 9am",
+    date: "20th Jan 2024 @ 9am",
     fee: "8000 INR",
     zoomLink: "https://www.vanarait.com",
     contact: "+91 9392926261",
@@ -19,7 +19,7 @@ const trainingData = [
   {
     title: "Data structures and Design patterns in Java",
     trainer: "Mr. Ramesh",
-    date: "21th Jan 2024 @ 6pm",
+    date: "20th Jan 2024 @ 6pm",
     fee: "5000 INR",
     zoomLink: "https://www.vanarait.com",
     contact: "+91 9392926261",
