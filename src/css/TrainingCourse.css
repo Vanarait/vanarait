@@ -37,6 +37,7 @@
   font-style: italic;
   color: mediumvioletred;
   font-size: 14px;
+  padding-bottom: 8px;
 }
 
 .javaCourse a {
@@ -84,6 +85,7 @@
   font-style: italic;
   color: azure;
   font-size: 14px;
+  padding-bottom: 8px;
 }
 
 .dataCourse a {
@@ -131,6 +133,7 @@
   font-style: italic;
   color: mediumvioletred;
   font-size: 14px;
+  padding-bottom: 8px;
 }
 
 .uiCourse a {
