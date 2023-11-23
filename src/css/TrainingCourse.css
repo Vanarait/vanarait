@@ -7,96 +7,92 @@
 } */
 
 .javaCourse h1 {
-  color: #E8B38C
+  color: purple
 }
 
 .javaCourse h2 {
   text-align: center;
   font-size: 28px;
-  color: #BB8644;
+  color: #fff;
+  background-color: skyblue;
   margin-bottom: 20px;
   animation: fadeInUp 1s ease;
   text-transform: uppercase;
-  /* Convert the text to uppercase */
+  padding: 5px;
   font-weight: bold;
-  /* Make the text bold */
   letter-spacing: 2px;
-  /* Add letter spacing */
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  /* Add a subtle text shadow */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
 }
 
 .javaCourse h3 {
-  color: #ffcb79;
+  color: #1596c0;
 }
 
 .javaCourse h4 {
-  color: #e3d477;
+  color: darkslateblue;
 }
 
 .javaCourse h5 {
   margin: 15px;
   font-style: italic;
-  color: #E8B38C;
+  color: mediumvioletred;
   font-size: 14px;
 }
 
 .javaCourse a {
   color: #fff;
-  padding: 5px;
+  padding: 5px 8px;
   margin: 15px;
   text-decoration: none;
   border-radius: 5px;
-  background-color: #e0485d;
-  box-shadow: 1px 1px 1px #000;
+  background-color: purple;
+  box-shadow: 1px 1px 1px palevioletred;
 }
 
 /* .dataCourse{
     background-color: #F6FFEE;
 } */
 .dataCourse h1 {
-  color: #FA8882;
+  color: darkorange;
 }
 
 .dataCourse h2 {
   text-align: center;
   font-size: 28px;
-  color: #DD9BCF;
+  color: #fff;
+  padding: 5px;
+  background: radial-gradient(circle at 50.3% 44.5%, rgb(111 123 137) 0%, rgb(64 80 96 / 55%) 100.2%);
   margin-bottom: 20px;
   animation: fadeInUp 1s ease;
   text-transform: uppercase;
-  /* Convert the text to uppercase */
   font-weight: bold;
-  /* Make the text bold */
   letter-spacing: 2px;
-  /* Add letter spacing */
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  /* Add a subtle text shadow */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
 }
 
 .dataCourse h3 {
-  color: #93e3b7;
+  color: #11bdf6;
   /* Add a subtle text shadow */
 }
 
 .dataCourse h4 {
-  color: #edb4ab;
+  color: floralwhite;
 }
 
 .dataCourse h5 {
   margin: 15px;
   font-style: italic;
-  color: #F48882;
+  color: azure;
   font-size: 14px;
 }
 
 .dataCourse a {
   color: #F6FFEE;
-  padding: 5px;
+  padding: 5px 8px;
   margin: 15px;
   text-decoration: none;
   border-radius: 5px;
-  background-color: #FA8882;
+  background-color: #e79705;
   box-shadow: 1px 1px 1px #000;
 }
 
@@ -105,46 +101,44 @@
 } */
 
 .uiCourse h1 {
-  color: #683b2b;
+  color: cadetblue;
 }
 
 .uiCourse h2 {
   text-align: center;
   font-size: 28px;
-  color: #a68d05;
+  color: #fff;
+  background: linear-gradient(91.9deg, #5f9ea0a8 0.1%, rgb(255, 237, 237) 70.9%, cadetblue 186.2%);
   margin-bottom: 20px;
+  padding: 5px;
   animation: fadeInUp 1s ease;
   text-transform: uppercase;
-  /* Convert the text to uppercase */
   font-weight: bold;
-  /* Make the text bold */
   letter-spacing: 2px;
-  /* Add letter spacing */
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  /* Add a subtle text shadow */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
 }
 
 .uiCourse h3 {
-  color: #d49e8d;
+  color: #1596c0;
 }
 
 .uiCourse h4 {
-  color: #683b2b;
+  color: darkslateblue;
 }
 
 .uiCourse h5 {
   margin: 15px;
   font-style: italic;
-  color: #B08401;
+  color: mediumvioletred;
   font-size: 14px;
 }
 
 .uiCourse a {
   color: #FAF6F2;
-  padding: 5px;
+  padding: 5px 8px;
   margin: 15px;
   text-decoration: none;
   border-radius: 5px;
-  background-color: #D49E8D;
+  background-color: cadetblue;
   box-shadow: 1px 1px 1px #000;
 }
