@@ -2,10 +2,12 @@ import React, { useEffect, useState } from "react";
 import { Navbar, Nav, NavDropdown, Image, Container } from "react-bootstrap";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import Logo from "../Assests/Images/logo.png";
+import Logo from "../Assests/Images/logo-new.png";
 import isMobile from "./Common/MobileView";
+import Title from "./Common/Title";
 
 const StyledNav = styled(Navbar)`
+  background-color: #212121 !important;
   transition: max-height 0.5s ease-in-out;
   margin-top: ${isMobile() ? "35px" : "54px"};
   .primaryNav {
@@ -58,6 +60,29 @@ const StyledNav = styled(Navbar)`
     max-height: 100px;
     opacity: 1;
     transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    a {
+      text-decoration: none;
+    }
+    .logo {
+      height: ${isMobile() ? "58px" : "65px"};
+      margin-top: 0.4rem;
+    }
+    .logo-title {
+      margin-left: 8px;
+      line-height: 0.2;
+      h1 {
+        font-size: ${isMobile() ? "2.7rem" : "3.5rem"};
+        font-weight: normal;
+        color: #fff;
+        text-shadow: 0px 3px 2px mediumblue;
+      }
+      span {
+        font-size: ${isMobile() ? "0.5rem" : "0.6rem"};
+        text-transform: uppercase;
+        margin-left: ${isMobile() ? "10px" : " 16px"};
+        color: #11bdf6;
+      }
+    }
   }
 
   .navbar-brand.d-none {
@@ -100,7 +125,7 @@ const Navigation = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
+      if (window.scrollY > 40) {
         setScrolling(true);
       } else {
         setScrolling(false);
@@ -125,19 +150,20 @@ const Navigation = () => {
       expand="lg"
       className={scrolling ? "navbar-sticky" : "navbar-top bg-body-tertiary"}
       data-bs-theme="dark"
-      bg="dark"
       fixed="top"
     >
       <Container>
         <Navbar.Brand
           className={`navbar-brand ${scrolling && !isMobile() ? "d-none" : ""}`}
         >
-          <Link to="/">
-            <Image
-              src={Logo}
-              alt="Logo not found"
-              width={isMobile() ? 250 : 300}
-            />
+          <Link to="/" className="d-flex align-items-center">
+            <Image src={Logo} alt="Logo not found" className="logo" />
+            <div className="logo-title">
+              <Title level={1} className="mb-0">
+                Vanara IT
+              </Title>
+              <span>Learn Here And Lead In It Industry</span>
+            </div>
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle onClick={toggleMenu}>
