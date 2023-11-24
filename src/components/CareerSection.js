@@ -103,7 +103,7 @@ const services = [
 const CareerSection = () => {
   return (
     <StyledContainer className={isMobile() ? "mb-0" : "mb-5 mt-4"}>
-      <Title level={1} className="mb-4" style={{ fontSize: "1.7rem" }}>
+      <Title level={1} className="my-3" style={{ fontSize: "1.7rem" }}>
         Our Range of Services
       </Title>
       <Row>

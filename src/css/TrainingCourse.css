@@ -5,6 +5,25 @@
 /* .javaCourse {
   background-color: #8e2ad90d;
 } */
+@media screen and (max-width:767px) {
+  .banner-content h1 {
+    font-size: 1.5rem !important;
+  }
+
+  .banner-content h2,
+  .banner-content h4 {
+    font-size: 1rem !important;
+  }
+
+  .banner-content h3 {
+    font-size: 0.9rem !important;
+  }
+
+  .banner-content h5 {
+    font-size: 0.7rem !important;
+  }
+}
+
 
 .javaCourse h1 {
   color: purple

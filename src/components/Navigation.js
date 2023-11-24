@@ -13,7 +13,7 @@ const StyledNav = styled(Navbar)`
   .primaryNav {
     .nav-item {
       border-bottom: ${isMobile() && "1px solid #6e6e6e"};
-      margin-right: 14px;
+      margin-right: 10px;
       &:hover {
         background: #6c757d;
         border-radius: 5px;
@@ -21,6 +21,8 @@ const StyledNav = styled(Navbar)`
     }
     a {
       color: #fff;
+      font-family: "Poppins", sans-serif;
+      font-size: 0.9rem;
     }
   }
   .dropdown-toggle {
@@ -69,18 +71,19 @@ const StyledNav = styled(Navbar)`
     .logo-title {
       margin-left: 8px;
       h1 {
-        font-size: ${isMobile() ? "2.7rem" : "3.5rem"};
+        font-size: ${isMobile() ? "2.7rem" : "3rem"};
         font-weight: normal;
         color: #fff;
         text-shadow: 0px 3px 2px mediumblue;
         line-height: ${isMobile() ? "0.5" : "0.6"};
-        margin-top: ${isMobile() ? "8px" : "5px"};
+        margin-top: ${isMobile() ? "8px" : "10px"};
+        font-family: "Poppins", sans-serif;
       }
       span {
         font-size: ${isMobile() ? "0.5rem" : "0.6rem"};
         text-transform: uppercase;
         margin-left: ${isMobile() ? "10px" : " 15px"};
-        color: #11bdf6;
+        color: aqua;
       }
     }
   }

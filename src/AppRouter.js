@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import WebFont from "webfontloader";
 import { motion } from "framer-motion";
 import styled from "styled-components";
 import Home from "./pages/Home";
@@ -22,11 +23,25 @@ import WhatsAppChatbot from "./components/WhatsAppChatbot";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import LandingPopup from "./components/LandingPopup";
 
+WebFont.load({
+  google: {
+    families: ["Poppins:300,400,500,600,700&display=swap"],
+  },
+});
+
 const MainContainer = styled.div`
   background: #f6f6f6;
   display: flex;
   flex-direction: column;
   margin-top: ${isMobile() ? "111px" : "138px"};
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Poppins", sans-serif;
+  }
 `;
 
 const AppRouter = () => {
