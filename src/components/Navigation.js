@@ -66,12 +66,12 @@ const StyledNav = styled(Navbar)`
       text-decoration: none;
     }
     .logo {
-      height: ${isMobile() ? "45px" : "65px"};
+      height: ${isMobile() ? "45px" : "55px"};
     }
     .logo-title {
       margin-left: 8px;
       h1 {
-        font-size: ${isMobile() ? "2rem" : "3rem"};
+        font-size: ${isMobile() ? "2rem" : "2.5rem"};
         font-weight: normal;
         color: #fff;
         text-shadow: 0px 3px 2px mediumblue;
@@ -82,7 +82,7 @@ const StyledNav = styled(Navbar)`
       span {
         font-size: ${isMobile() ? "0.5rem" : "0.6rem"};
         text-transform: uppercase;
-        margin-left: ${isMobile() ? "10px" : " 15px"};
+        margin-left: 10px;
         color: aqua;
       }
     }
@@ -151,7 +151,13 @@ const Navigation = () => {
     <StyledNav
       collapseOnSelect
       expand="lg"
-      className={scrolling ? "navbar-sticky" : "navbar-top bg-body-tertiary"}
+      className={
+        scrolling
+          ? "navbar-sticky"
+          : isMobile()
+          ? "p-1"
+          : "navbar-top bg-body-tertiary"
+      }
       data-bs-theme="dark"
       fixed="top"
     >
