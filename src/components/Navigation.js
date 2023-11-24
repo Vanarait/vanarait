@@ -73,8 +73,8 @@ const StyledNav = styled(Navbar)`
         font-weight: normal;
         color: #fff;
         text-shadow: 0px 3px 2px mediumblue;
-        line-height: 0.6;
-        margin-top: 5px;
+        line-height: ${isMobile() ? "0.5" : "0.6"};
+        margin-top: ${isMobile() ? "8px" : "5px"};
       }
       span {
         font-size: ${isMobile() ? "0.5rem" : "0.6rem"};
