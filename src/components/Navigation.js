@@ -153,9 +153,9 @@ const Navigation = () => {
       expand="lg"
       className={
         scrolling
-          ? "navbar-sticky"
+          ? "navbar-sticky py-1"
           : isMobile()
-          ? "p-1"
+          ? "py-1"
           : "navbar-top bg-body-tertiary"
       }
       data-bs-theme="dark"
