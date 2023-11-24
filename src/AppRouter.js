@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import WebFont from "webfontloader";
+import ReactGa from "react-ga";
 import { motion } from "framer-motion";
 import styled from "styled-components";
 import Home from "./pages/Home";
@@ -45,6 +46,11 @@ const MainContainer = styled.div`
 `;
 
 const AppRouter = () => {
+  useEffect(() => {
+    ReactGa.initialize("G-HHJJBM4YPP");
+    ReactGa.pageview(window.location.pathname + window.location.search);
+  }, []);
+
   return (
     <Router>
       <LandingPopup />
