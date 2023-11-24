@@ -33,7 +33,7 @@ const MainContainer = styled.div`
   background: #f6f6f6;
   display: flex;
   flex-direction: column;
-  margin-top: ${isMobile() ? "111px" : "138px"};
+  margin-top: ${isMobile() ? "100px" : "138px"};
   h1,
   h2,
   h3,

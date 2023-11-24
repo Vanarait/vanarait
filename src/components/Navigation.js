@@ -66,17 +66,17 @@ const StyledNav = styled(Navbar)`
       text-decoration: none;
     }
     .logo {
-      height: ${isMobile() ? "58px" : "65px"};
+      height: ${isMobile() ? "45px" : "65px"};
     }
     .logo-title {
       margin-left: 8px;
       h1 {
-        font-size: ${isMobile() ? "2.7rem" : "3rem"};
+        font-size: ${isMobile() ? "2rem" : "3rem"};
         font-weight: normal;
         color: #fff;
         text-shadow: 0px 3px 2px mediumblue;
-        line-height: ${isMobile() ? "0.5" : "0.6"};
-        margin-top: ${isMobile() ? "8px" : "10px"};
+        line-height: ${isMobile() ? "0.2" : "0.6"};
+        margin-top: ${isMobile() ? "15px" : "10px"};
         font-family: "Poppins", sans-serif;
       }
       span {
