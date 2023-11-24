@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Modal, ListGroup } from "react-bootstrap";
+import BlinkingText from "./Common/BlinkingText";
 import styled from "styled-components";
 
 const StyledModal = styled(Modal)`
@@ -13,6 +14,16 @@ const StyledModal = styled(Modal)`
 
   .modal-body {
     animation: fadeInAndBold 1s ease-in-out;
+    .blinkText {
+      span {
+        display: block;
+        cursor: pointer;
+        padding: 8px 5px;
+        font-size: 1rem;
+        font-weight: normal;
+        font-style: italic;
+      }
+    }
   }
 
   @keyframes fadeInAndBold {
@@ -111,6 +122,12 @@ const LandingPopup = () => {
               </a>
             </ListGroup.Item>
           </StledGroup>
+          <div className="my-2 blinkText">
+            <BlinkingText>
+              100% Job Guarantee{" "}
+              <i className="fa fa-thumbs-up" aria-hidden="true"></i>
+            </BlinkingText>
+          </div>
         </Modal.Body>
         {/* <Modal.Footer>
           <Button variant="secondary" onClick={() => setShowModal(false)}>
