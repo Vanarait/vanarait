@@ -65,21 +65,21 @@ const StyledNav = styled(Navbar)`
     }
     .logo {
       height: ${isMobile() ? "58px" : "65px"};
-      margin-top: 0.4rem;
     }
     .logo-title {
       margin-left: 8px;
-      line-height: 0.2;
       h1 {
         font-size: ${isMobile() ? "2.7rem" : "3.5rem"};
         font-weight: normal;
         color: #fff;
         text-shadow: 0px 3px 2px mediumblue;
+        line-height: 0.6;
+        margin-top: 5px;
       }
       span {
         font-size: ${isMobile() ? "0.5rem" : "0.6rem"};
         text-transform: uppercase;
-        margin-left: ${isMobile() ? "10px" : " 16px"};
+        margin-left: ${isMobile() ? "10px" : " 15px"};
         color: #11bdf6;
       }
     }
@@ -154,7 +154,9 @@ const Navigation = () => {
     >
       <Container>
         <Navbar.Brand
-          className={`navbar-brand ${scrolling && !isMobile() ? "d-none" : ""}`}
+          className={`navbar-brand ${
+            scrolling && !isMobile() ? "d-none" : "p-0"
+          }`}
         >
           <Link to="/" className="d-flex align-items-center">
             <Image src={Logo} alt="Logo not found" className="logo" />
