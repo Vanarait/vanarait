@@ -114,7 +114,7 @@ const LandingPopup = () => {
             <ListGroup.Item className="d-flex justify-content-between align-items-center">
               <span>Website:</span>
               <a
-                href="http://www.vanarait.com"
+                href="https://www.vanarait.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >

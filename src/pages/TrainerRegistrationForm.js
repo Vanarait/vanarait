@@ -55,7 +55,7 @@ const TrainerRegistration = () => {
       // If there are no errors, submit the form data
       // You can use fetch or axios to send a POST request to your backend API
       // Example using fetch:
-      fetch("http://localhost:8080/api/trainers", {
+      fetch("https://localhost:8080/api/trainers", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
