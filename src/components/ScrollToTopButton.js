@@ -38,7 +38,8 @@ const ScrollToTopButton = () => {
     }
   };
 
-  const scrollToTop = () => {
+  const scrollToTop = (e) => {
+    e.preventDefault();
     window.scrollTo({
       top: 0,
       behavior: "smooth",
