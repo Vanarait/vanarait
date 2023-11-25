@@ -168,7 +168,7 @@ const Navigation = () => {
           }`}
         >
           <Link to="/" className="d-flex align-items-center">
-            <Image src={Logo} alt="Logo not found" className="logo" />
+            <Image src={Logo} alt="Vanara IT Academy Logo" className="logo" />
             <div className="logo-title">
               <Title level={1} className="mb-0">
                 Vanara IT
