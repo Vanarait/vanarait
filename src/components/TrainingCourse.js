@@ -1,6 +1,7 @@
 import React from "react";
 import "../css/TrainingCourse.css";
 import Title from "../components/Common/Title";
+import isMobile from "./Common/MobileView";
 
 const TrainingCourse = ({
   title,
@@ -18,7 +19,7 @@ const TrainingCourse = ({
           {title}
         </Title>
         <Title className="trainer" level={2}>
-          Online Training By {trainer}
+          {!isMobile() && "Online"} Training By {trainer}
         </Title>
 
         <Title level={3}>Demo on {date}</Title>
