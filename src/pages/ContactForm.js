@@ -23,6 +23,15 @@ const StyledDiv = styled.div`
 `;
 
 const ContactForm = () => {
+  const optionData = [
+    { id: 11, label: "Graduation (Completed)" },
+    { id: 22, label: "Graduation (Ongoing)" },
+    { id: 33, label: "Post Graduation (Completed)" },
+    { id: 44, label: "Graduation (Ongoing)" },
+    { id: 55, label: "12th Intermediate" },
+    { id: 66, label: "Diploma" },
+  ];
+
   const initialFormData = {
     name: "",
     email: "",
@@ -47,15 +56,6 @@ const ContactForm = () => {
       }));
     }
   };
-
-  const optionData = [
-    { id: 11, label: "Graduation (Completed)" },
-    { id: 22, label: "Graduation (Ongoing)" },
-    { id: 33, label: "Post Graduation (Completed)" },
-    { id: 44, label: "Graduation (Ongoing)" },
-    { id: 55, label: "12th Intermediate" },
-    { id: 66, label: "Diploma" },
-  ];
 
   const handleSubmit = (e) => {
     e.preventDefault();
