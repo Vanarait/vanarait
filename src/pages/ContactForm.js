@@ -75,6 +75,7 @@ const ContactForm = () => {
             <Form.Label>Name:</Form.Label>
             <Form.Control
               type="text"
+              placeholder="Enter Name"
               name="name"
               value={formData.name}
               onChange={handleInputChange}
@@ -85,6 +86,7 @@ const ContactForm = () => {
             <Form.Label>Email:</Form.Label>
             <Form.Control
               type="email"
+              placeholder="Enter Email"
               name="email"
               value={formData.email}
               onChange={handleInputChange}
@@ -122,6 +124,7 @@ const ContactForm = () => {
             <Form.Control
               as="textarea"
               name="message"
+              placeholder="Enter your query"
               value={formData.message}
               onChange={handleInputChange}
               required
