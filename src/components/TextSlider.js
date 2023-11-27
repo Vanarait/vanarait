@@ -18,7 +18,7 @@ const trainingData = [
 
   {
     title: "Data structures and Design patterns in Java",
-    trainer: "Mr. Ramesh",
+    trainer: "Mr. Dhruv",
     date: "20th Jan 2024 @ 6pm",
     fee: "5000 INR",
     zoomLink: "https://www.vanarait.com",

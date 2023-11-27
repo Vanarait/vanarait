@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Form, Button } from "react-bootstrap";
+import { Container, Form, Button, InputGroup } from "react-bootstrap";
 import styled from "styled-components";
 import Title from "../components/Common/Title";
 
@@ -11,27 +11,55 @@ const StyledDiv = styled.div`
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  .form-control {
+  .form-control,
+  .form-select,
+  .input-group-text {
     border: 1px solid #11bdf6;
+  }
+  .input-group-text {
+    background: #1596c0;
+    color: #fff;
   }
 `;
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState({
+  const initialFormData = {
     name: "",
     email: "",
     message: "",
-  });
+    selectedOption: "",
+    phoneNumber: "",
+  };
+
+  const [formData, setFormData] = useState(initialFormData);
 
   const handleInputChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+    const { name, value, type } = e.target;
+    if (name === "phoneNumber" && type === "text" && /^\d{0,10}$/.test(value)) {
+      setFormData((prevData) => ({
+        ...prevData,
+        [name]: value.trim(),
+      }));
+    } else if (name !== "phoneNumber") {
+      setFormData((prevData) => ({
+        ...prevData,
+        [name]: type === "select-one" ? value : value.trim(),
+      }));
+    }
   };
+
+  const optionData = [
+    { id: 11, label: "Graduation (Completed)" },
+    { id: 22, label: "Graduation (Ongoing)" },
+    { id: 33, label: "Post Graduation (Completed)" },
+    { id: 44, label: "Graduation (Ongoing)" },
+    { id: 55, label: "12th Intermediate" },
+    { id: 66, label: "Diploma" },
+  ];
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setFormData(initialFormData);
     // Handle form submission here
     console.log("Form submitted with data:", formData);
   };
@@ -53,7 +81,6 @@ const ContactForm = () => {
               required
             />
           </Form.Group>
-
           <Form.Group controlId="formEmail" className="mb-3">
             <Form.Label>Email:</Form.Label>
             <Form.Control
@@ -64,9 +91,34 @@ const ContactForm = () => {
               required
             />
           </Form.Group>
-
+          <Form.Label>Phone:</Form.Label>
+          <InputGroup className="mb-3">
+            <InputGroup.Text id="basic-addon1">+91</InputGroup.Text>
+            <Form.Control
+              placeholder="Enter Mobile Number"
+              name="phoneNumber"
+              type="text"
+              value={formData.phoneNumber}
+              onChange={handleInputChange}
+              required
+            />
+          </InputGroup>
+          <Form.Label>Highest Qualification:</Form.Label>
+          <Form.Select
+            name="selectedOption"
+            value={formData.selectedOption}
+            onChange={handleInputChange}
+            className="mb-3"
+          >
+            <option value="">Select...</option>
+            {optionData.map((option) => (
+              <option key={option.id} value={option.label}>
+                {option.label}
+              </option>
+            ))}
+          </Form.Select>
           <Form.Group controlId="formMessage" className="mb-3">
-            <Form.Label>Message:</Form.Label>
+            <Form.Label>Query:</Form.Label>
             <Form.Control
               as="textarea"
               name="message"
