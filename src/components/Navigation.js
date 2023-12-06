@@ -198,6 +198,7 @@ const Navigation = () => {
                   onMouseEnter={() => setShowDropdown(true)}
                   onMouseLeave={() => setShowDropdown(false)}
                   onClick={handleToggle}
+                  className={`nav-item ${scrolling ? "fade-in" : ""}`}
                 >
                   {menuItem.submenu.map((subItem, subIndex) => (
                     <NavDropdown.Item
@@ -210,7 +211,10 @@ const Navigation = () => {
                   ))}
                 </NavDropdown>
               ) : (
-                <Nav.Item key={index}>
+                <Nav.Item
+                  key={index}
+                  className={`nav-item ${scrolling ? "fade-in" : ""}`}
+                >
                   <Nav.Link href={menuItem.link}>{menuItem.label}</Nav.Link>
                 </Nav.Item>
               )
