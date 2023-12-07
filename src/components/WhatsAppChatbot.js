@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import "../css/WhatsAppChatbotPopup.css";
 import isMobile from "./Common/MobileView";
+import Logo from "../Assests/Images/logo-new.png";
 import styled from "styled-components";
 
 const StyledBtn = styled(Button)`
@@ -21,25 +22,27 @@ function WhatsAppChatbot() {
   return (
     <div className="chatbot-container">
       <div className={`chatbot-popup ${isOpen ? "open" : ""}`}>
-        {/* Close button */}
-        <button className="close-button" onClick={toggleChatbot}>
-          <i className="fa fa-window-close" aria-hidden="true"></i>
-        </button>
-        <img src="images/logo.png" alt="Logo" className="img-fluid" />
-        {/* WhatsApp chat link */}
-        <div className="great">
-          <p>Hi there,</p>
-          <p>Welcome to Vanara IT..!!</p>
-          <p>How can we help you?</p>
+        <div className="d-flex align-items-center justify-content-between chatHeader p-2">
+          <img src={Logo} alt="Logo" width={30} />
+          <button className="close-button" onClick={toggleChatbot}>
+            <i className="fa fa-window-close" aria-hidden="true"></i>
+          </button>
         </div>
-        <a
-          href="https://api.whatsapp.com/send?phone=919494494085&amp;text=Hello, I have a question about https%3A%2F%2FvanaraIT.com%2Fonline-training-schedules"
-          target="_blank"
-          rel="noreferrer" // Added for enhanced security
-          className="whatsapp-link"
-        >
-          Chat on WhatsApp
-        </a>
+        <div className="p-2">
+          <div className="great">
+            <p>Hi there,</p>
+            <p>Welcome to Vanara IT..!!</p>
+            <p>How can we help you?</p>
+          </div>
+          <a
+            href="https://api.whatsapp.com/send?phone=919494494085&amp;text=Hello, I have a question about https%3A%2F%2FvanaraIT.com%2Fonline-training-schedules"
+            target="_blank"
+            rel="noreferrer" // Added for enhanced security
+            className="whatsapp-link my-2"
+          >
+            Chat on WhatsApp
+          </a>
+        </div>
       </div>
       <StyledBtn className="chatbot-icon" onClick={toggleChatbot}>
         <i className="fa fa-whatsapp fa-2x" aria-hidden="true"></i>
