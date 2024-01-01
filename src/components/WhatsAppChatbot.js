@@ -35,7 +35,7 @@ function WhatsAppChatbot() {
             <p>How can we help you?</p>
           </div>
           <a
-            href="https://api.whatsapp.com/send?phone=919494494085&amp;text=Hello, I have a question about https%3A%2F%2FvanaraIT.com%2Fonline-training-schedules"
+            href="https://api.whatsapp.com/send?phone=+91-9392926261&amp;text=Hello, I have a question about https%3A%2F%2FvanaraIT.com%2Fonline-training-schedules"
             target="_blank"
             rel="noreferrer" // Added for enhanced security
             className="whatsapp-link my-2"
