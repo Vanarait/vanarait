@@ -7,7 +7,7 @@ import isMobile from "./Common/MobileView";
 import Title from "./Common/Title";
 
 const StyledNav = styled(Navbar)`
-  background-color: #212121 !important;
+  background-color: #000000 !important;
   transition: max-height 0.5s ease-in-out;
   margin-top: ${isMobile() ? "35px" : "54px"};
   .primaryNav {
@@ -169,12 +169,7 @@ const Navigation = () => {
         >
           <Link to="/" className="d-flex align-items-center">
             <Image src={Logo} alt="Vanara IT Academy Logo" className="logo" />
-            <div className="logo-title">
-              <Title level={1} className="mb-0">
-                Vanara IT
-              </Title>
-              <span>Learn Here And Lead In It Industry</span>
-            </div>
+          
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle onClick={toggleMenu}>
