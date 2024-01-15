@@ -8,7 +8,7 @@ import Title from "./Common/Title";
 
 const StyledNav = styled(Navbar)`
   background-color: #000000 !important;
-  transition: max-height 0.5s ease-in-out;
+  transition: max-height 0.5s ease;
   margin-top: ${isMobile() ? "35px" : "54px"};
   .primaryNav {
     .nav-item {
