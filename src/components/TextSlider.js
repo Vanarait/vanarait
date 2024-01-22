@@ -5,10 +5,10 @@ import "../css/TextSlider.css";
 
 const trainingData = [
   {
-    title: "UI Full Stack With Real Time Project in Cloud",
+    title: "Core Java",
     trainer: "Mr. Ramesh",
-    date: "20th Jan 2024 @ 9am",
-    fee: "8000 INR",
+    date: "04th Feb 2024 @ 9:30am",
+    fee: "1000 INR",
     zoomLink: "https://www.vanarait.com",
     contact: "+91 9392926261",
     customStyle: "uiCourse",
@@ -17,10 +17,10 @@ const trainingData = [
   },
 
   {
-    title: "Data structures and Design patterns in Java",
-    trainer: "Mr. Dhruv",
-    date: "20th Jan 2024 @ 6pm",
-    fee: "5000 INR",
+    title: "React JS",
+    trainer: "Mr. Venkatesh",
+    date: "5th Feb 2024 @ 2pm",
+    fee: "1000 INR",
     zoomLink: "https://www.vanarait.com",
     contact: "+91 9392926261",
     customStyle: "dataCourse",
@@ -29,9 +29,20 @@ const trainingData = [
   },
 
   {
-    title: "JAVA Full Stack With Real Time Project in Cloud",
+    title: "AWS DevOps",
+    trainer: "Mr. Ramesh",
+    date: "208th Feb 2024 @ 8pm",
+    fee: "12000 INR",
+    zoomLink: "https://www.vanarait.com",
+    contact: "+91 9392926261",
+    customStyle: "javaCourse",
+    bgColor:
+      "radial-gradient(592px at 48.2% 50%, rgba(255, 255, 249, 0.6) 0%, rgb(160, 199, 254) 74.6%)",
+  },
+  {
+    title: "UI Full Stack",
     trainer: "Mr. Venkatesh",
-    date: "28th Jan 2024 @ 8am",
+    date: "28th Feb 2024 @ 4pm",
     fee: "12000 INR",
     zoomLink: "https://www.vanarait.com",
     contact: "+91 9392926261",
