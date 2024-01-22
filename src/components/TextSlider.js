@@ -13,7 +13,7 @@ const trainingData = [
     contact: "+91 9392926261",
     customStyle: "uiCourse",
     bgColor:
-      "linear-gradient(89.9deg, rgb(208, 146, 255) 0.1%, rgb(255, 237, 237) 47.9%, rgb(255, 255, 231) 100.2%)",
+      "linear-gradient(89.9deg, rgb(98, 106, 255) 0.1%, rgb(255, 237, 237) 47.9%, rgb(255, 255, 231) 100.2%)",
   },
 
   {
@@ -25,7 +25,7 @@ const trainingData = [
     contact: "+91 9392926261",
     customStyle: "dataCourse",
     bgColor:
-      " radial-gradient(circle at 50.3% 44.5%, rgb(116, 147, 179) 0%, rgb(62, 83, 104) 100.2%)",
+      " radial-gradient(circle at 50.3% 44.5%, rgb(106, 117, 179) 0%, rgb(62, 83, 104) 100.2%)",
   },
 
   {
@@ -37,7 +37,7 @@ const trainingData = [
     contact: "+91 9392926261",
     customStyle: "javaCourse",
     bgColor:
-      "radial-gradient(592px at 48.2% 50%, rgba(205, 205, 249, 0.6) 0%, rgb(160, 199, 254) 74.6%)",
+      "radial-gradient(592px at 48.2% 50%, rgba(215, 225, 249, 0.6) 0%, rgb(160, 199, 254) 74.6%)",
   },
   {
     title: "Java UI Full Stack",
@@ -48,7 +48,7 @@ const trainingData = [
     contact: "+91 9392926261",
     customStyle: "javaCourse",
     bgColor:
-      "radial-gradient(592px at 48.2% 50%, rgba(200, 200, 249, 0.6) 0%, rgb(160, 199, 254) 74.6%)",
+      "radial-gradient(592px at 48.2% 50%, rgba(220, 230, 249, 0.6) 0%, rgb(160, 199, 254) 74.6%)",
   },
   // Add similar objects for Java and Azure training
 ];
