@@ -46,7 +46,7 @@ const trainingData = [
     fee: "12000 INR",
     zoomLink: "https://www.vanarait.com",
     contact: "+91 9392926261",
-    customStyle: "javaCourse",
+    customStyle: "dataCourse",
     bgColor:
       "radial-gradient(592px at 48.2% 50%, rgba(220, 230, 249, 0.6) 0%, rgb(160, 199, 254) 74.6%)",
   },
