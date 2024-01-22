@@ -13,7 +13,7 @@ const trainingData = [
     contact: "+91 9392926261",
     customStyle: "uiCourse",
     bgColor:
-      "linear-gradient(89.9deg, rgb(208, 246, 255) 0.1%, rgb(255, 237, 237) 47.9%, rgb(255, 255, 231) 100.2%)",
+      "linear-gradient(89.9deg, rgb(208, 146, 255) 0.1%, rgb(255, 237, 237) 47.9%, rgb(255, 255, 231) 100.2%)",
   },
 
   {
@@ -37,10 +37,10 @@ const trainingData = [
     contact: "+91 9392926261",
     customStyle: "javaCourse",
     bgColor:
-      "radial-gradient(592px at 48.2% 50%, rgba(255, 255, 249, 0.6) 0%, rgb(160, 199, 254) 74.6%)",
+      "radial-gradient(592px at 48.2% 50%, rgba(205, 205, 249, 0.6) 0%, rgb(160, 199, 254) 74.6%)",
   },
   {
-    title: "UI Full Stack",
+    title: "Java UI Full Stack",
     trainer: "Mr. Venkatesh",
     date: "28th Feb 2024 @ 4pm",
     fee: "12000 INR",
@@ -48,7 +48,7 @@ const trainingData = [
     contact: "+91 9392926261",
     customStyle: "javaCourse",
     bgColor:
-      "radial-gradient(592px at 48.2% 50%, rgba(255, 255, 249, 0.6) 0%, rgb(160, 199, 254) 74.6%)",
+      "radial-gradient(592px at 48.2% 50%, rgba(200, 200, 249, 0.6) 0%, rgb(160, 199, 254) 74.6%)",
   },
   // Add similar objects for Java and Azure training
 ];
