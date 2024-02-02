@@ -104,7 +104,7 @@ const Footer = () => {
               </Nav.Link>
               <Nav.Link href="mailto:hr@vanarait.com" className="mb-0 p-0">
                 <i className="fa fa-envelope" aria-hidden="true"></i>
-                hr@vanarait.com
+                vanarait.hyd@gmail.com
               </Nav.Link>
               <Nav.Link
                 className="mb-3 p-0 d-flex"

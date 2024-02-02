@@ -61,7 +61,7 @@ const PrimaryNav = () => {
             </div>
             <div className="d-flex">
               <span>Email: </span>
-              <Nav.Link href="mailto:hr@vanarait.com">hr@vanarait.com</Nav.Link>
+              <Nav.Link href="mailto:hr@vanarait.com">vanarait.hyd@gmail.com</Nav.Link>
             </div>
           </Stack>
         )}
