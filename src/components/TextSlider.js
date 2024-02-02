@@ -81,7 +81,7 @@ const trainingData = [
     contact: "+91 9392926261",
     customStyle: "uiCourse",
     bgColor:
-      "radial-gradient(592px at 48.2% 50%, rgba(120, 30, 99, 0.6) 0%, rgb(160, 199, 254) 74.6%)",
+      "radial-gradient(192px at 48.2% 50%, rgba(220, 230, 9, 0.6) 0%, rgb(160, 199, 254) 74.6%)",
   },
   // Add similar objects for Java and Azure training
 ];
