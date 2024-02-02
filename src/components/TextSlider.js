@@ -36,7 +36,7 @@ const trainingData = [
     contact: "+91 9392926261",
     customStyle: "javaCourse",
     bgColor:
-      " radial-gradient(circle at 50.3% 44.5%, rgb(106, 247, 179) 0%, rgb(62, 83, 104) 100.2%)",
+      "radial-gradient(592px at 49.2% 50%, rgba(215, 201, 129, 0.6) 0%, rgb(160, 199, 254) 74.6%)",
   },
   {
     title: "Angular 12 with TypeScript",
