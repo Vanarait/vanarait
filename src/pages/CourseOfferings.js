@@ -10,8 +10,8 @@ const CourseOfferings = () => {
       id: 1,
       title: "React JS",
       durationMonths: 2,
-      originalPrice: "5000 INR",
-      offerPrice: "3000 INR",
+      originalPrice: "8000 INR",
+      offerPrice: "4000 INR",
       imageUrl: "vanarait/src/Assests/Images/contact2.jpg", // Replace with actual image URL
     },
     {
@@ -34,7 +34,7 @@ const CourseOfferings = () => {
       id: 4,
       title: "Java FullStack With Resct JS",
       durationMonths: 3,
-      originalPrice: "32000 INR",
+      originalPrice: "22000 INR",
       offerPrice: "16000 INR",
       imageUrl: "vanarait/src/Assests/Images/contact2.jpg", // Replace with actual image URL
     },
@@ -42,7 +42,7 @@ const CourseOfferings = () => {
       id: 5,
       title: "AWS DevOps",
       durationMonths: 2,
-      originalPrice: "18000 INR",
+      originalPrice: "15000 INR",
       offerPrice: "10000 INR",
       imageUrl: "vanarait/src/Assests/Images/contact2.jpg", // Replace with actual image URL
     },
