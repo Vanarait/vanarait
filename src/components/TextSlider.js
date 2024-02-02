@@ -13,7 +13,7 @@ const trainingData = [
     contact: "+91 9392926261",
     customStyle: "uiCourse",
     bgColor:
-      "radial-gradient(89.9deg, rgb(98, 106, 255) 0.1%, rgb(255, 207, 237) 47.9%, rgb(255, 255, 231) 100.2%)",
+      " radial-gradient(circle at 50.3% 44.5%, rgb(206, 107, 119) 0%, rgb(62, 83, 104) 100.2%)",
   },
   {
     title: "Core & Advance Java",
@@ -24,7 +24,7 @@ const trainingData = [
     contact: "+91 9392926261",
     customStyle: "dataCourse",
     bgColor:
-      "radial-gradient(89.9deg, rgb(98, 106, 255) 0.1%, rgb(255, 227, 237) 47.9%, rgb(255, 255, 231) 100.2%)",
+      " radial-gradient(circle at 50.3% 44.5%, rgb(206, 107, 229) 0%, rgb(62, 83, 104) 100.2%)",
   },
 
   {
