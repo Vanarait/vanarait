@@ -47,7 +47,7 @@ const trainingData = [
     contact: "+91 9392926261",
     customStyle: "uiCourse",
     bgColor:
-      "radial-gradient(592px at 48.2% 50%, rgba(215, 215, 149, 0.5) 0%, rgb(160, 150, 254) 74.6%)",
+      "radial-gradient(592px at 48.2% 50%, rgba(215, 205, 129, 0.6) 0%, rgb(160, 189, 254) 74.6%)",
   },
 
   {
