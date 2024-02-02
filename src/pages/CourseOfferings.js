@@ -12,7 +12,7 @@ const CourseOfferings = () => {
       durationMonths: 2,
       originalPrice: "5000 INR",
       offerPrice: "3000 INR",
-      imageUrl: "https://example.com/react-course-image.jpg", // Replace with actual image URL
+      imageUrl: "vanarait/src/Assests/Images/contact2.jpg", // Replace with actual image URL
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ const CourseOfferings = () => {
       durationMonths: 3,
       originalPrice: "10000 INR",
       offerPrice: "6000 INR",
-      imageUrl: "https://example.com/nodejs-course-image.jpg", // Replace with actual image URL
+      imageUrl: "vanarait/src/Assests/Images/contact2.jpg", // Replace with actual image URL
     },
     {
       id: 3,
@@ -28,7 +28,7 @@ const CourseOfferings = () => {
       durationMonths: 2,
       originalPrice: "18000 INR",
       offerPrice: "12000 INR",
-      imageUrl: "https://example.com/react-course-image.jpg", // Replace with actual image URL
+      imageUrl: "vanarait/src/Assests/Images/contact2.jpg", // Replace with actual image URL
     },
     {
       id: 4,
@@ -36,7 +36,7 @@ const CourseOfferings = () => {
       durationMonths: 3,
       originalPrice: "32000 INR",
       offerPrice: "16000 INR",
-      imageUrl: "https://example.com/nodejs-course-image.jpg", // Replace with actual image URL
+      imageUrl: "vanarait/src/Assests/Images/contact2.jpg", // Replace with actual image URL
     },
     {
       id: 5,
@@ -44,16 +44,9 @@ const CourseOfferings = () => {
       durationMonths: 2,
       originalPrice: "18000 INR",
       offerPrice: "10000 INR",
-      imageUrl: "https://example.com/react-course-image.jpg", // Replace with actual image URL
+      imageUrl: "vanarait/src/Assests/Images/contact2.jpg", // Replace with actual image URL
     },
-    {
-      id: 6,
-      title: "Azure DevOps",
-      durationMonths: 3,
-      originalPrice: "20000 INR",
-      offerPrice: "12000 INR",
-      imageUrl: "https://example.com/nodejs-course-image.jpg", // Replace with actual image URL
-    },
+    
     // Add more courses as needed
   ];
 

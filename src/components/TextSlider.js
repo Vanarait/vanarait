@@ -5,50 +5,83 @@ import "../css/TextSlider.css";
 
 const trainingData = [
   {
-    title: "Core Java",
-    trainer: "Mr. Ramesh",
-    date: "04th Feb 2024 @ 9:30am",
-    fee: "1000 INR",
+    title: "HTML5 & CSS3 with Bootstrap",
+    trainer: "Mrs. Rani",
+    date: "",
+    fee: "3000 INR",
     zoomLink: "https://www.vanarait.com",
     contact: "+91 9392926261",
     customStyle: "uiCourse",
     bgColor:
-      "linear-gradient(89.9deg, rgb(98, 106, 255) 0.1%, rgb(255, 237, 237) 47.9%, rgb(255, 255, 231) 100.2%)",
+      "linear-gradient(89.9deg, rgb(98, 106, 255) 0.1%, rgb(255, 207, 237) 47.9%, rgb(255, 255, 231) 100.2%)",
   },
-
   {
-    title: "React JS",
-    trainer: "Mr. Venkatesh",
-    date: "5th Feb 2024 @ 2pm",
-    fee: "1000 INR",
+    title: "Core & Advance Java",
+    trainer: "Mr. Ramesh",
+    date: "",
+    fee: "4000 INR",
     zoomLink: "https://www.vanarait.com",
     contact: "+91 9392926261",
     customStyle: "dataCourse",
     bgColor:
-      " radial-gradient(circle at 50.3% 44.5%, rgb(106, 117, 179) 0%, rgb(62, 83, 104) 100.2%)",
+      "linear-gradient(89.9deg, rgb(98, 106, 255) 0.1%, rgb(255, 227, 237) 47.9%, rgb(255, 255, 231) 100.2%)",
+  },
+
+  {
+    title: "Javascript with React JS",
+    trainer: "Mr. Venkatesh",
+    date: "",
+    fee: "5000 INR",
+    zoomLink: "https://www.vanarait.com",
+    contact: "+91 9392926261",
+    customStyle: "javaCourse",
+    bgColor:
+      " radial-gradient(circle at 50.3% 44.5%, rgb(106, 247, 179) 0%, rgb(62, 83, 104) 100.2%)",
+  },
+  {
+    title: "Angular 12 with TypeScript",
+    trainer: "Mr. Venkatesh",
+    date: "",
+    fee: "4000 INR",
+    zoomLink: "https://www.vanarait.com",
+    contact: "+91 9392926261",
+    customStyle: "uiCorse",
+    bgColor:
+      " radial-gradient(circle at 50.3% 44.5%, rgb(106, 107, 179) 0%, rgb(62, 83, 104) 100.2%)",
   },
 
   {
     title: "AWS DevOps",
     trainer: "Mr. Ramesh",
-    date: "208th Feb 2024 @ 8pm",
-    fee: "12000 INR",
+    date: "",
+    fee: "5000 INR",
     zoomLink: "https://www.vanarait.com",
     contact: "+91 9392926261",
     customStyle: "javaCourse",
     bgColor:
-      "radial-gradient(592px at 48.2% 50%, rgba(215, 225, 249, 0.6) 0%, rgb(160, 199, 254) 74.6%)",
+      "radial-gradient(592px at 48.2% 50%, rgba(215, 205, 129, 0.6) 0%, rgb(160, 199, 254) 74.6%)",
   },
   {
-    title: "Java UI Full Stack",
-    trainer: "Mr. Venkatesh",
-    date: "28th Feb 2024 @ 4pm",
-    fee: "12000 INR",
+    title: "Java with React Project",
+    trainer: "Mr. Ramesh",
+    date: "",
+    fee: "10000 INR",
     zoomLink: "https://www.vanarait.com",
     contact: "+91 9392926261",
     customStyle: "dataCourse",
     bgColor:
-      "radial-gradient(592px at 48.2% 50%, rgba(220, 230, 249, 0.6) 0%, rgb(160, 199, 254) 74.6%)",
+      "radial-gradient(592px at 48.2% 50%, rgba(215, 25, 149, 0.6) 0%, rgb(160, 199, 254) 74.6%)",
+  },
+  {
+    title: "Java8 with SpringBoot",
+    trainer: "Mr. Venkatesh",
+    date: "",
+    fee: "6000 INR",
+    zoomLink: "https://www.vanarait.com",
+    contact: "+91 9392926261",
+    customStyle: "uiCourse",
+    bgColor:
+      "radial-gradient(592px at 48.2% 50%, rgba(120, 30, 99, 0.6) 0%, rgb(160, 199, 254) 74.6%)",
   },
   // Add similar objects for Java and Azure training
 ];
