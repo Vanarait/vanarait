@@ -131,7 +131,7 @@ const Footer = () => {
       </Container>
 
       <FooterCopy className="mt-4">
-        <p>&copy; 2023 Your Company. All rights reserved.</p>
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
       </FooterCopy>
     </FooterNav>
   );

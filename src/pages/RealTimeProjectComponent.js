@@ -7,129 +7,72 @@ const RealTimeProjectComponent = () => {
   return (
     <PaperStyle>
       <Title level={1} className="page-title">
-        Real-Time Weather Dashboard
+        Java a real-time project for training in banking and e-commerce domains integrated with AWS DevOps
       </Title>
       <div className="p-4">
+
+        <h2> Designing a real-time project for training in banking and e-commerce domains integrated with AWS DevOps can be an excellent learning experience. Here's an outline of what such a project could entail:
+        </h2>
         <p>
-          Build a real-time weather dashboard application that allows users to
-          check the current weather conditions, forecasts, and related
-          information for various locations. The application leverages Java for
-          the backend, a user-friendly UI for the frontend, and Azure cloud
-          technologies to store, process, and serve data.
+          The project aims to create an integrated system that simulates the functionalities of a banking platform and an e-commerce website. It is implemented on AWS using DevOps methods for continuous integration and deployment
         </p>
         <StyledTitle level={3}>Key Components:</StyledTitle>
+        <h3>Banking Domain:</h3>
         <ul>
-          <li>
-            <strong>Backend (Java):</strong>
-            <ul>
-              <li>
-                Use Java to create a backend server responsible for fetching
-                weather data from a weather API. You can use a framework like
-                Spring Boot for this purpose.
-              </li>
-              <li>
-                Implement APIs to allow the frontend to request weather
-                information for specific locations.
-              </li>
-              <li>
-                Set up scheduled tasks to periodically fetch and update weather
-                data from the weather API.
-              </li>
-            </ul>
+          <li>User Authentication and Authorization: Implement secure user authentication and authorization using techniques like OAuth 2.0.</li>
+          <li>Account Management: Allow users to create bank accounts, manage balances, and perform transactions (deposit, withdraw, transfer).</li>
+          <li>Transaction History: Maintain a transaction history for each account, including details like date, amount, and type of transaction.</li>
+          <li>Security Measures: Implement security features such as encryption for sensitive data like passwords and transactions.</li>
+          <li>Notifications: Send real-time notifications to users for important events like transactions, account updates, etc.</li>
+        </ul>
+        <h3>E-commerce Domain:</h3>
+        <ul>
+          <li>Product Catalog Management: Create, update, and delete products from the catalog. Each product should have details like name, description, price, and availability.</li>
+          <li>Shopping Cart: Allow users to add/remove items to/from their shopping cart. Calculate the total price dynamically.</li>
+          <li>Checkout Process: Implement a secure checkout process with multiple payment options (credit/debit card, PayPal, etc.).</li>
+          <li>Order Management: Track orders from placement to delivery, including order status updates and shipment tracking.</li>
+          <li>User Reviews and Ratings: Enable users to leave reviews and ratings for products they've purchased.</li>
+        </ul>
+        <h3>AWS DevOps Integration:</h3>
+        <ul>
+          <li>Continuous Integration (CI):
+            <ol>
+              <li>Set up automated build processes using AWS CodeBuild.</li>
+              <li>Implement unit tests to ensure code quality.</li>
+            </ol>
           </li>
-          <li>
-            <strong>User Interface (UI):</strong>
-            <ul>
-              <li>
-                Develop a responsive and visually appealing frontend using
-                technologies like React.js, Angular, or Vue.js.
-              </li>
-              <li>
-                Create a user interface that enables users to search for weather
-                information by location (e.g., city or coordinates).
-              </li>
-              <li>
-                Display real-time weather data, including current conditions,
-                temperature, humidity, wind speed, and forecasts.
-              </li>
-            </ul>
+          <li>Continuous Deployment (CD):
+          <ol>
+              <li>Utilize AWS CodePipeline for automating deployments to different environments (development, staging, production).</li>
+              <li>Implement blue-green deployments for zero downtime updates.</li>
+            </ol>
           </li>
-          <li>
-            <strong>Azure Cloud Technologies:</strong>
-            <ul>
-              <li>
-                Use Azure Functions or Azure Logic Apps to trigger updates and
-                data retrieval tasks, ensuring real-time data synchronization.
-              </li>
-              <li>
-                Store weather data in an Azure SQL Database or Azure Cosmos DB.
-              </li>
-              <li>
-                Implement Azure App Service for hosting your frontend
-                application and backend API.
-              </li>
-            </ul>
+          <li>Infrastructure as Code (IaC):
+          <ol>
+              <li>Use AWS CloudFormation or AWS CDK to provision and manage AWS resources.</li>
+            </ol>
           </li>
-          <li>
-            <strong>Weather API Integration:</strong>
-            <ul>
-              <li>
-                Integrate with a weather data provider's API (e.g., OpenWeather,
-                Weatherbit) to fetch real-time weather information.
-              </li>
-              <li>
-                Ensure that you're able to retrieve data such as current weather
-                conditions, forecasts, and historical weather data.
-              </li>
-            </ul>
-          </li>
-          <li>
-            <strong>User Authentication (Optional):</strong>
-            <ul>
-              <li>
-                Implement user authentication and registration using Azure
-                Active Directory (Azure AD) or another authentication service.
-              </li>
-              <li>
-                Allow users to save their favorite locations or customize their
-                weather dashboard.
-              </li>
-            </ul>
-          </li>
-          <li>
-            <strong>Real-Time Updates:</strong>
-            <ul>
-              <li>
-                Implement WebSocket or Server-Sent Events (SSE) to provide
-                real-time updates to the user interface. Users should see
-                automatic updates without needing to refresh the page.
-              </li>
-            </ul>
+          <li>Monitoring and Logging:
+          <ol>
+              <li>Set up monitoring using AWS CloudWatch to track system health and performance.</li>
+              <li>Implement logging with AWS CloudTrail and CloudWatch Logs for auditing and troubleshooting.</li>
+            </ol>
           </li>
         </ul>
-        <StyledTitle level={3}>Challenges:</StyledTitle>
+        <h3>Additional Considerations:</h3>
         <ul>
-          <li>Integrating real-time updates through WebSocket or SSE.</li>
-          <li>Managing Azure resources effectively and securely.</li>
-          <li>Handling the rate limits of the chosen weather API.</li>
-          <li>Implementing responsive and visually appealing UI design.</li>
+          <li>Scalability: Design the system to handle a large number of concurrent users and transactions.</li>
+          <li>Fault Tolerance: Implement redundancy and failover mechanisms to ensure high availability.</li>
+          <li>Data Privacy and Compliance: Ensure compliance with regulations like GDPR for handling sensitive user data.</li>
+          <li>Cost Optimization: Optimize AWS resource usage to minimize costs, especially for services like EC2, RDS, and S3.</li>
         </ul>
-        <StyledTitle level={3}>Learning Outcomes:</StyledTitle>
+        <h3>Project Deliverables:</h3>
         <ul>
-          <li>
-            Proficiency in Java, web development, and Azure cloud services.
-          </li>
-          <li>Experience with integrating third-party APIs.</li>
-          <li>Knowledge of real-time application development.</li>
-          <li>Skills in data visualization and data synchronization.</li>
+          <li>Fully functional banking and e-commerce platforms deployed on AWS.</li>
+          <li>Documentation covering system architecture, deployment process, and usage instructions.</li>
+          <li>Presentation/demo showcasing key features and AWS DevOps integration.</li>
         </ul>
-        <p>
-          This project provides a real-time application that leverages Java, UI,
-          and Azure cloud technologies to deliver weather information to users
-          in a user-friendly and dynamic manner. It combines backend
-          development, frontend design, and cloud-based data management, making
-          it a comprehensive and practical project.
-        </p>
+        <p>This project would provide participants with hands-on experience in building complex applications in real-world domains while also familiarizing them with modern DevOps practices on AWS.</p>
       </div>
     </PaperStyle>
   );
