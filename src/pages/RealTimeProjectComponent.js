@@ -11,13 +11,13 @@ const RealTimeProjectComponent = () => {
       </Title>
       <div className="p-4">
 
-        <h2> Designing a real-time project for training in banking and e-commerce domains integrated with AWS DevOps can be an excellent learning experience. Here's an outline of what such a project could entail:
-        </h2>
+        <h5> Designing a real-time project for training in banking and e-commerce domains integrated with AWS DevOps can be an excellent learning experience. Here's an outline of what such a project could entail:
+        </h5>
         <p>
           The project aims to create an integrated system that simulates the functionalities of a banking platform and an e-commerce website. It is implemented on AWS using DevOps methods for continuous integration and deployment
         </p>
         <StyledTitle level={3}>Key Components:</StyledTitle>
-        <h3>Banking Domain:</h3>
+        <h6>Banking Domain:</h6>
         <ul>
           <li>User Authentication and Authorization: Implement secure user authentication and authorization using techniques like OAuth 2.0.</li>
           <li>Account Management: Allow users to create bank accounts, manage balances, and perform transactions (deposit, withdraw, transfer).</li>
@@ -25,7 +25,7 @@ const RealTimeProjectComponent = () => {
           <li>Security Measures: Implement security features such as encryption for sensitive data like passwords and transactions.</li>
           <li>Notifications: Send real-time notifications to users for important events like transactions, account updates, etc.</li>
         </ul>
-        <h3>E-commerce Domain:</h3>
+        <h6>E-commerce Domain:</h6>
         <ul>
           <li>Product Catalog Management: Create, update, and delete products from the catalog. Each product should have details like name, description, price, and availability.</li>
           <li>Shopping Cart: Allow users to add/remove items to/from their shopping cart. Calculate the total price dynamically.</li>
@@ -33,7 +33,7 @@ const RealTimeProjectComponent = () => {
           <li>Order Management: Track orders from placement to delivery, including order status updates and shipment tracking.</li>
           <li>User Reviews and Ratings: Enable users to leave reviews and ratings for products they've purchased.</li>
         </ul>
-        <h3>AWS DevOps Integration:</h3>
+        <h6>AWS DevOps Integration:</h6>
         <ul>
           <li>Continuous Integration (CI):
             <ol>
@@ -59,14 +59,14 @@ const RealTimeProjectComponent = () => {
             </ol>
           </li>
         </ul>
-        <h3>Additional Considerations:</h3>
+        <h6>Additional Considerations:</h6>
         <ul>
           <li>Scalability: Design the system to handle a large number of concurrent users and transactions.</li>
           <li>Fault Tolerance: Implement redundancy and failover mechanisms to ensure high availability.</li>
           <li>Data Privacy and Compliance: Ensure compliance with regulations like GDPR for handling sensitive user data.</li>
           <li>Cost Optimization: Optimize AWS resource usage to minimize costs, especially for services like EC2, RDS, and S3.</li>
         </ul>
-        <h3>Project Deliverables:</h3>
+        <h6>Project Deliverables:</h6>
         <ul>
           <li>Fully functional banking and e-commerce platforms deployed on AWS.</li>
           <li>Documentation covering system architecture, deployment process, and usage instructions.</li>
