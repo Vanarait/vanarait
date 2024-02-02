@@ -24,7 +24,7 @@ const trainingData = [
     contact: "+91 9392926261",
     customStyle: "dataCourse",
     bgColor:
-      " radial-gradient(circle at 50.3% 44.5%, rgb(206, 107, 229) 0%, rgb(62, 83, 104) 100.2%)",
+      " radial-gradient(circle at 90.3% 44.5%, rgb(206, 107, 229) 0%, rgb(62, 183, 104) 100.2%)",
   },
 
   {
