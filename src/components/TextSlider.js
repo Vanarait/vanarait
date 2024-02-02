@@ -6,7 +6,7 @@ import "../css/TextSlider.css";
 const trainingData = [
   {
     title: "HTML5 & CSS3 with Bootstrap",
-    trainer: "Mrs. Rani",
+    trainer: "Mis. Rani",
     date: "",
     fee: "3000 INR",
     zoomLink: "https://www.vanarait.com",
@@ -17,7 +17,7 @@ const trainingData = [
   },
   {
     title: "Core & Advance Java",
-    trainer: "Mr. Ramesh",
+    trainer: "Mrs. Ramesh",
     date: "",
     fee: "4000 INR",
     zoomLink: "https://www.vanarait.com",
@@ -29,7 +29,7 @@ const trainingData = [
 
   {
     title: "Javascript with React JS",
-    trainer: "Mr. Venkatesh",
+    trainer: "Mrs. Venkatesh",
     date: "",
     fee: "5000 INR",
     zoomLink: "https://www.vanarait.com",
@@ -40,19 +40,19 @@ const trainingData = [
   },
   {
     title: "Angular 12 with TypeScript",
-    trainer: "Mr. Venkatesh",
+    trainer: "Mrs. Venkatesh",
     date: "",
     fee: "4000 INR",
     zoomLink: "https://www.vanarait.com",
     contact: "+91 9392926261",
-    customStyle: "uiCorse",
+    customStyle: "uiCourse",
     bgColor:
       " radial-gradient(circle at 50.3% 44.5%, rgb(106, 107, 179) 0%, rgb(62, 83, 104) 100.2%)",
   },
 
   {
     title: "AWS DevOps",
-    trainer: "Mr. Ramesh",
+    trainer: "Mrs. Ramesh",
     date: "",
     fee: "5000 INR",
     zoomLink: "https://www.vanarait.com",
@@ -63,7 +63,7 @@ const trainingData = [
   },
   {
     title: "Java with React Project",
-    trainer: "Mr. Ramesh",
+    trainer: "Mrs. Ramesh",
     date: "",
     fee: "10000 INR",
     zoomLink: "https://www.vanarait.com",
@@ -74,7 +74,7 @@ const trainingData = [
   },
   {
     title: "Java8 with SpringBoot",
-    trainer: "Mr. Venkatesh",
+    trainer: "Mrs. Ramesh",
     date: "",
     fee: "6000 INR",
     zoomLink: "https://www.vanarait.com",
