@@ -7,7 +7,7 @@ const RealTimeProjectComponent = () => {
   return (
     <PaperStyle>
       <Title level={1} className="page-title">
-        Java a real-time project for training in banking and e-commerce domains integrated with AWS DevOps
+        Java a Real Time Project Tring on banking and e-commerce domains integrated with AWS DevOps
       </Title>
       <div className="p-4">
 
