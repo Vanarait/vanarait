@@ -70,7 +70,7 @@ const trainingData = [
     contact: "+91 9392926261",
     customStyle: "dataCourse",
     bgColor:
-      "radial-gradient(592px at 48.2% 50%, rgba(215, 25, 149, 0.6) 0%, rgb(160, 199, 254) 74.6%)",
+      "radial-gradient(392px at 48.2% 50%, rgba(215, 225, 149, 0.6) 0%, rgb(160, 199, 254) 74.6%)",
   },
   {
     title: "Java8 with SpringBoot",
