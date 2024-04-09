@@ -28,7 +28,7 @@ const Location = () => {
           <Card className="h-100 d-flex flex-column">
             <Card.Body>
               <i className="fa fa-envelope fa-2x" aria-hidden="true"></i>
-              <div className="mt-2">hr@vanarait.com</div>
+              <div className="mt-2">vanarait.hyd@gmail.com</div>
             </Card.Body>
           </Card>
         </Col>
