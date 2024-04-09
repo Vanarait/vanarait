@@ -71,7 +71,7 @@ const LandingPopup = () => {
       // Reset the modal flag in sessionStorage
       sessionStorage.setItem("hasModalBeenShown", "false");
       setShowModal(true);
-    }, 3 * 60 * 1000); // Clear session every 3 minutes
+    }, 30 * 60 * 1000); // Clear session every 3 minutes
 
     // Clean up the intervals when the component is unmounted
     return () => {
