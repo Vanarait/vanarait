@@ -12,50 +12,50 @@ const OnlineTrainingDetails = () => {
       {
         id: 1,
         course: "React Js",
-        date: "NA",
+        date: "2nd May ",
         time: "7AM IST",
-        zoomLink: "contact us - +91 9494494085",
-        register: "https://chat.whatsapp.com/FRRltwrNFWk42GGukiaQuf",
+        zoomLink: "Contact us: +91 9494494085",
+        register: "Ping me in WhatsApp",
       },
       {
         id: 6,
         course: "UI Full Stack with React",
-        date: "8th Feb 2024",
+        date: "8th May",
         time: "6PM IST",
-        zoomLink: "contact us - +91 9494494085",
-        register: "https://chat.whatsapp.com/KSZvtTqyLTa9ypsr4bbWaG",
+        zoomLink: "Contact us: +91 9494494085",
+        register: "Ping me in WhatsApp",
       },
       {
         id: 3,
         course: "Java Full Stack with React",
-        date: "4th Feb 2024",
+        date: "24th April",
         time: "7AM IST)",
-        zoomLink: "contact us - +91 9494494085",
-        register: "https://chat.whatsapp.com/FnI1B8dwGLoGfx8eT4G5hv",
+        zoomLink: "Contact us: +91 9494494085",
+        register: "Ping me in WhatsApp",
       },
       {
         id: 4,
-        course: "NO SQL Database ",
-        date: "NA",
+        course: "Angular 12 with TypeScript ",
+        date: "1st April",
         time: "8AM IST",
-        zoomLink: "contact us - +91 9494494085",
-        register: "https://chat.whatsapp.com/Coafqur8R9RGIb6FQB91Z7",
+        zoomLink: "Contact us: +91 9494494085",
+        register: "Ping me in WhatsApp",
       },
       {
         id: 2,
         course: "AWS DevOps",
-        date: "NA",
+        date: "12th April",
         time: "7:30 AM IST",
-        zoomLink: "contact us - +91 9494494085",
-        register: "https://chat.whatsapp.com/Ipuie4W9Hm43UBcuelGJfa",
+        zoomLink: "Contact us: +91 9494494085",
+        register: "Ping me in WhatsApp",
       },
       {
         id: 5,
-        course: "AngularJS",
-        date: "NA",
+        course: "React Js with TypeScript",
+        date: "28th Arpil",
         time: "7PM Ist",
-        zoomLink: "contact us - +91 9494494085",
-        register: "https://chat.whatsapp.com/G7SmI97JqfSBTMa09rU573",
+        zoomLink: "Contact us: +91 9494494085",
+        register: "Ping me in WhatsApp",
       },
       // Add more training sessions here
     ];
@@ -71,15 +71,15 @@ const OnlineTrainingDetails = () => {
         {
           data: "zoomLink",
           render: function (data, type, row) {
-            return `<a href="${data}" target="_blank" rel="noopener noreferrer">Join Zoom</a>`;
+            return `Contact us: +91 9494494085`;
           },
         },
         {
           data: "register",
           render: function (data, type, row) {
             return `
-              <button type="button" class="btn btn-danger white-color" onclick="window.open('${data}', '_blank');">
-                Register Now
+              <button type="button" class="btn btn-danger white-color" '_blank');">
+              Ping me in WhatsApp
               </button>
             `;
           },
